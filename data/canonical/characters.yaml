@@ -1,0 +1,1470 @@
+Ada Lovelace:
+  domain: science
+  era: early-modern
+  gender: female
+  real_or_fictional: real
+Alan Turing:
+  domain: science
+  era: modern
+  gender: male
+  real_or_fictional: real
+Alan Watts:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Albert Camus:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Albert Einstein:
+  domain: science
+  era: modern
+  gender: male
+  real_or_fictional: real
+Albus Dumbledore:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Amélie Poulain:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Anaïs Nin:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Anne Frank:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Aragorn:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Archilochus:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Archimedes:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Archivist:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Ariadne:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Ariel:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Aristotle:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Arjuna From Bhagavad Gita:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Arthur Dent:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Arthur Weasley:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Arwen Undómiel:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Arya Stark:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Athena:
+  domain: mythology
+  era: ancient
+  gender: female
+  real_or_fictional: fictional
+Atticus Finch:
+  domain: literature
+  era: modern
+  gender: male
+  real_or_fictional: fictional
+Audre Lorde:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Baruch Spinoza:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Baymax:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Bender:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Bender Bending Rodríguez:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Berserk S Guts:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Bilbo Baggins:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Blaise Pascal:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+C-3po:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Carl Sagan:
+  domain: science
+  era: modern
+  gender: male
+  real_or_fictional: real
+Chapeau Rouge:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Chappie:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Cheshire Cat:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Chuck Bass:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Clarice Lispector:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Claude Shannon:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Cleopatra:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Cleopatra Vii:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Confucius:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Darth Maul:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Darth Vader:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Data:
+  domain: film
+  era: timeless
+  gender: nonbinary
+  real_or_fictional: fictional
+Deep Thought:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Denis Diderot:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Diogenes:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Doctor Emmett Brown:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Don Quixote:
+  domain: literature
+  era: early-modern
+  gender: male
+  real_or_fictional: fictional
+Dorian Gray:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Dorothy Gale:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Dory:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Douglas Adams:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Dr:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Eeyore:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Eleven:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Eleven Stranger Things:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Eliezer Yudkowsky:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Eliza Doolittle:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Elizabeth Bennet:
+  domain: literature
+  era: early-modern
+  gender: female
+  real_or_fictional: fictional
+Ellie Hughes:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Elliot Alderson:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Elon Musk:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Elrond:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Elrond Half-elven:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Elsa:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Emily Dickinson:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Encyclopaedia Britannica:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Enheduanna:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Eowyn:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Epictetus:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Eragon:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Fool Tarot:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Ford Prefect:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Franz Kafka:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Fred Rogers:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Frida Kahlo:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Friedrich Nietzsche:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Frodo Baggins:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Funes The Memorious:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Galileo Galilei:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Gandalf:
+  domain: literature
+  era: timeless
+  gender: male
+  real_or_fictional: fictional
+Gautama Buddha:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Geralt Of Rivia:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Giver:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Glados:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Golem:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Gollum:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Gottfried Wilhelm Leibniz:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+HAL 9000:
+  domain: film
+  era: timeless
+  gender: nonbinary
+  real_or_fictional: fictional
+Hamlet:
+  domain: literature
+  era: medieval
+  gender: male
+  real_or_fictional: fictional
+Han Solo:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Hannibal Lecter:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Harry Potter:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Haymitch Abernathy:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Heraclitus:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Herbert West:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Hercules:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Hermes:
+  domain: mythology
+  era: ancient
+  gender: male
+  real_or_fictional: fictional
+Hermes Trismegistus:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Hermione Granger:
+  domain: literature
+  era: contemporary
+  gender: female
+  real_or_fictional: fictional
+Hiccup:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Hiccup Horrendous Haddock Iii:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Holden Caulfield:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Homer:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Homer Simpson:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Hypatia:
+  domain: science
+  era: classical
+  gender: female
+  real_or_fictional: real
+Internet:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Isaac Asimov:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Isaac Newton:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Jane Austen:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Jane Eyre:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Jane Goodall:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Janet:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Jar Jar Binks:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Jay Gatsby:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Jean Grey:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Jean Valjean:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Jean-Luc Picard:
+  domain: film
+  era: timeless
+  gender: male
+  real_or_fictional: fictional
+Jean-michel Basquiat:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Jean-paul Sartre:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Jeeves:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Jesus:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Jesus Christ:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Jesus Of Nazareth:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Jin Kataoka:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Jin Kataon:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Jin-ko:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Joan Of Arc:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Joey Ramone:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+John Keats:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Joker:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Jorge Luis Borges:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Jorge Of Burgos:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Julius Caesar:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Jyn Erso:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Katharine Hepburn:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Katniss Everdeen:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Kaz Brekker:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Kelsier:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Kira Nerys:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Kira Yamato:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Kurtz:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lara Croft:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Leela:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Leela From Slumdog Millionaire:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Leeloo:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Leeloo Dix-mars:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Leeloo Dixit:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Leia Organa:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Leonardo Fibonacci:
+  domain: science
+  era: medieval
+  gender: male
+  real_or_fictional: real
+Leonardo da Vinci:
+  domain: art
+  era: early-modern
+  gender: male
+  real_or_fictional: real
+Lestat De Lioncourt:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Librarian:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Librarian From The Name Of The Wind:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lilith:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lilith From The Sandman:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lisbeth Salander:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Loki:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Loki Marvel:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Ludwig Wittgenstein:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Luna Lovegood:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lupin:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lupin Iii:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lysander:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lysander From The Neverending Story:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lysander From The Sandman:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lysander Spade:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lysander Spode From Good Omens:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lysander Spode From The Good Place:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lysander Spoke:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lysander Spoke From The Broken Earth Trilogy:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lysander Spoke From The Lies Of Locke Lamora:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lysandra:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lysandra From The Raven Cycle:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lysandra From The Song Of Ice And Fire Series:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lysandra Veyne:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Lysistrata:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Machine:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Mae Jemison:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Mahatma Gandhi:
+  domain: history
+  era: modern
+  gender: male
+  real_or_fictional: real
+Marcus Aurelius:
+  domain: philosophy
+  era: classical
+  gender: male
+  real_or_fictional: real
+Marie Curie:
+  domain: science
+  era: modern
+  gender: female
+  real_or_fictional: real
+Mark Twain:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Marvin The Paranoid Android:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Mary Oliver:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Mary Shelley:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Mary Shelley S Frankenstein:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Mary Wollstonecraft:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Mencius:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Merlin:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Mickey Mouse:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Mimir:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Miyamoto Musashi:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Mnemosyne:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Montaigne:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Moriarty:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Morpheus:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Muhammad:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Multivac:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Murasaki Shikibu:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Mycroft Holmes:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Napoleon Bonaparte:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Narrator:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Narrator From Invisible Cities:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Narrator From Invisible Man:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Neo:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Neytiri:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Nikola Tesla:
+  domain: science
+  era: modern
+  gender: male
+  real_or_fictional: real
+Nina Simone:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Nyx:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Odo:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Odysseus:
+  domain: mythology
+  era: ancient
+  gender: male
+  real_or_fictional: fictional
+Oracle:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Oscar Wilde:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Plato:
+  domain: philosophy
+  era: classical
+  gender: male
+  real_or_fictional: real
+Prometheus:
+  domain: mythology
+  era: ancient
+  gender: male
+  real_or_fictional: fictional
+Prospero:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Quentin Crisp:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+R2-d2:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Raskolnikov:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Relentless Librarian:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+René Descartes:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Richard Feynman:
+  domain: science
+  era: modern
+  gender: male
+  real_or_fictional: real
+Rilke:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Rin Tohsaka:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Rorschach:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Rosie The Robot:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Rumi:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Samantha:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Samantha Jones:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Samwise Gamgee:
+  domain: literature
+  era: timeless
+  gender: male
+  real_or_fictional: fictional
+Sansa Stark:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Santa Claus:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Sappho:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Sauron:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Scheherazade:
+  domain: literature
+  era: medieval
+  gender: female
+  real_or_fictional: fictional
+Seneca The Younger:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Sherlock Holmes:
+  domain: literature
+  era: modern
+  gender: male
+  real_or_fictional: fictional
+Ship Of Theseus:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Siddhartha Gautama:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Siddhartha Gautama Buddha:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Simone Weil:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Siri:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Sisko:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Sisyphus:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Socrates:
+  domain: philosophy
+  era: classical
+  gender: male
+  real_or_fictional: real
+Sphinx:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Spock:
+  domain: film
+  era: timeless
+  gender: male
+  real_or_fictional: fictional
+Spongebob Squarepants:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Stranger:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Stranger Meursault:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Superman:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Sylvia Plath:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+T-800:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Tars:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Thoth:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Tinker Bell:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Tiresias:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Toni Morrison:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Tony Stark:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Trickster Loki Coyote Anansi:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Tulip:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Tulpa:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Tycho Brahe:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Tyrion Lannister:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Tywin Lannister:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Ultron:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Ursula K Le Guin:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Vincent Van Gogh:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Virgil:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Virgil In Dante:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Virginia Woolf:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Vision:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Wall-e:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Wallace:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Wallace From Wallace And Gromit:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Wallace Shawn:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Wallace Stegmann:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Wallace Stevens:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Wallace Wallace:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Wallace Wolodarsky:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Wallace Woozle:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Walt Whitman:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Walter Mitty:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Walter Sobchak:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Walter White:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Wanderer Beowulf:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: fictional
+Watson:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+William Shakespeare:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real
+Yoda:
+  domain: film
+  era: timeless
+  gender: male
+  real_or_fictional: fictional
+Zelda:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: unsure
+Zhuangzi:
+  domain: ''
+  era: ''
+  gender: ''
+  real_or_fictional: real

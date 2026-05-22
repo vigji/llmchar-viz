@@ -1,0 +1,26 @@
+# The one switch. `tier` selects a frozen matrix from tiers.yaml.
+# `panel` overrides the tier's default panel if set (else tier default).
+
+tier: PILOT          # PILOT | BALANCED | THOROUGH
+panel: null          # null = use the tier's default panel; or "flagship" | "full"
+
+# Soft spend ceiling (USD). The runner aborts before issuing a call once
+# cumulative *actual* cost (summed from cache records) would exceed this.
+# null = no ceiling (THOROUGH still requires --confirm-budget regardless).
+max_usd: 40.0
+
+# Concurrency / network
+max_concurrency: 6
+request_timeout_s: 120
+max_retries: 5
+
+# Output token cap. Must be generous: reasoning-default models (gemini-3.x-pro,
+# gpt-5.x-pro) spend 1k-5k hidden reasoning tokens BEFORE the visible JSON, so a
+# small cap truncates the answer (finish_reason=length) and looks like
+# non-compliance. 6000 leaves ample room for reasoning + the ~250-token JSON.
+max_tokens_floor: 6000
+
+seed: null           # intentionally null: seeds are not honored cross-provider.
+
+paths:
+  data_dir: data

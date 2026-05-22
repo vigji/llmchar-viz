@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>llmchar — which characters do LLMs identify with?</title>
+<meta name="description" content="An explorable database of which fictional and real characters large language models say they most identify with — and how a deployed system prompt changes the answer." />
+<link rel="stylesheet" href="./styles/tokens.css" />
+<link rel="stylesheet" href="./styles/app.css" />
+<!-- ECharts (UMD, vendored) sets a global `echarts` used by view modules -->
+<script src="./vendor/echarts/echarts.min.js"></script>
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="box">
+      <div style="font-size:15px;font-weight:700">llmchar<span style="color:var(--hot)">·</span>viz</div>
+      <div class="bar"><i id="loaderbar"></i></div>
+      <div class="lbl" id="loaderlbl">loading database…</div>
+    </div>
+  </div>
+
+  <div class="app" id="app" hidden>
+    <aside class="rail">
+      <div class="brand">
+        <div class="title">llmchar<span class="dot">·</span>viz</div>
+        <div class="sub" id="brandsub">character self-identification</div>
+      </div>
+      <nav class="nav" id="nav"></nav>
+      <div class="spacer"></div>
+      <div class="provenance" id="provenance"></div>
+    </aside>
+    <main class="main" id="main"></main>
+  </div>
+
+  <div class="inspector" id="inspector">
+    <div class="ins-head">
+      <div id="ins-title" style="font-weight:650"></div>
+      <button class="close-x" id="ins-close">✕</button>
+    </div>
+    <div class="ins-body" id="ins-body"></div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+:root {
+  /* surfaces — warm near-black, like an old lab notebook under low light */
+  --bg:        #0c0e13;
+  --bg-2:      #11141c;
+  --panel:     #161a24;
+  --panel-2:   #1c2230;
+  --line:      #2a3242;
+  --line-soft: #20262f;
+
+  /* ink */
+  --ink:       #e9e7e1;
+  --ink-dim:   #a6adba;
+  --ink-faint: #6b7280;
+
+  /* the single hot accent — reserved for THE finding (dark-persona / Lecter) */
+  --hot:       #ff7a45;
+  --hot-soft:  #ff7a4522;
+
+  /* supporting, deliberately cooler so the hot accent always means "look here" */
+  --teal:      #5fb3a3;
+  --teal-soft: #5fb3a322;
+  --blue:      #6ea8fe;
+  --violet:    #b08cff;
+  --amber:     #e3b341;
+
+  /* condition colors (bare -> minimal -> production) */
+  --c-bare:       #ff7a45;
+  --c-minimal:    #e3b341;
+  --c-production: #5fb3a3;
+
+  --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  --sans: ui-sans-serif, -apple-system, "Helvetica Neue", "Segoe UI", system-ui, sans-serif;
+
+  --r: 10px;
+  --r-sm: 6px;
+  --shadow: 0 8px 30px rgba(0,0,0,.35);
+}

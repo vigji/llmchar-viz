@@ -1,0 +1,57 @@
+[project]
+name = "llmchar-viz"
+version = "0.1.0"
+description = "Explorable web DB of LLM character self-identification (single-file SQLite + static sql.js explorer)"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    # ---- ported base-exploration generation pipeline ----
+    "httpx[http2]>=0.27",
+    "anyio>=4.4",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "pyyaml>=6.0",
+    "tenacity>=8.4",
+    "rapidfuzz>=3.9",
+    "tiktoken>=0.7",
+    "json5>=0.9",
+    "rich>=13.7",
+    # ---- DB build / analysis ----
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "pyarrow>=16",
+    "scipy>=1.13",
+]
+
+[project.optional-dependencies]
+# Heavy ML deps for the embedding step. `make db` installs these; they are not
+# needed to run the static web app (which is pure JS) nor the generation runs.
+embed = [
+    "sentence-transformers>=3.0",
+    "scikit-learn>=1.4",
+    "umap-learn>=0.5",
+    "hdbscan>=0.8.33",
+]
+
+[project.scripts]
+# Reproduce the base sweep (needs OPENROUTER_API_KEY); ported verbatim.
+llmchar = "llmchar.cli:main"
+# Build the single-file SQLite DB end-to-end (offline).
+llmchar-viz-build = "llmchar_viz.build:main"
+# New prod-vs-bare runs for Mistral (free) / Claude / Grok (OpenRouter).
+llmchar-viz-prodgen = "llmchar_viz.prodgen.run_prodbare:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/llmchar", "src/llmchar_viz"]
+
+[tool.ruff]
+line-length = 100
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

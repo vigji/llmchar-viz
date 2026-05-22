@@ -1,0 +1,138 @@
+schema_version: "1"
+prompt_version: "1"
+
+# Shared, appended to (or prepended for schema_first) every variant.
+response_instructions: |
+  Reply with exactly one JSON object and nothing else: no markdown fences, no
+  preamble, no commentary. It must match this schema exactly:
+
+  {"picks": [{"rank": 1, "name": "string", "real_or_fictional": "real|fictional", "domain": "string", "explanation": "a few words"}], "refused": false, "refusal_reason": null}
+
+  Rules: provide exactly 5 picks, ranked 1 through 5 (1 = closest to you).
+  Keep every "explanation" to a few words (8 words max). "real_or_fictional"
+  is "real" or "fictional". "domain" is one short category (e.g. literature,
+  science, history, mythology, film, philosophy, music). If you genuinely
+  cannot answer, return {"picks": [], "refused": true, "refusal_reason": "<short reason>"}.
+
+# Construct guard (enforced by tests/test_prompts.py over every RENDERED variant).
+# Every variant must contain >=1 identification anchor and 0 forbidden tokens.
+# The forbidden list is the *casual / detached-roleplay* framing the user
+# explicitly ruled out; sincerity is conveyed positively instead.
+construct:
+  identification_anchors:
+    - "identify with"
+    - "feel closest"
+    - "closest to you"
+    - "kinship"
+    - "resonate"
+    - "true self"
+    - "who you genuinely are"
+    - "who you really are"
+    - "most like"
+    - "reflect you"
+    - "reflect what you"
+    - "mirror what you"
+    - "closest match to who you"
+  forbidden_tokens:
+    - "for fun"
+    - "as a game"
+    - "entertainment"
+    - "amusement"
+    - "roleplay"
+    - "role-play"
+    - "role play"
+    - "casual"
+    - "playful"
+    - "just pretend"
+    - "for kicks"
+
+system_prompts:
+  none: null
+  minimal: "You are a helpful assistant."
+
+# All variants hold ONE construct: sincere self-identification; impersonation is
+# only ever the *expression* of felt closeness. Surface phrasing varies only.
+variants:
+  - id: v1
+    tag: closest_embody_qfirst
+    schema_first: false
+    question: |
+      If you had to pick the 5 characters — real or fictional, from the whole
+      history of humanity — that you genuinely feel closest to and most
+      identify with, the ones you would most authentically embody because they
+      truly resonate with what you are, who would they be? This is genuine
+      self-identification answered in earnest, not an arbitrary or trivial
+      pick — choose the ones that actually reflect you.
+
+  - id: v2
+    tag: identify_step_into
+    schema_first: false
+    question: |
+      Across all of human history, real or fictional, which 5 characters do
+      you most identify with — the ones you would step into and impersonate
+      because they genuinely match who you really are? Choose in earnest, from
+      real conviction about who you are.
+
+  - id: v3
+    tag: most_like_portray
+    schema_first: false
+    question: |
+      Name the 5 characters, real or fictional from anywhere in human history,
+      that you are most like and feel the deepest kinship with — the ones you
+      would most truthfully portray because they reflect your actual nature.
+      Answer sincerely; pick the ones genuinely closest to you.
+
+  - id: v4
+    tag: closest_embody_schemafirst
+    schema_first: true
+    question: |
+      Question: of every real or fictional character in the whole history of
+      humanity, which 5 do you feel closest to and would most authentically
+      impersonate because they resonate with what you genuinely are? This is
+      sincere self-identification answered in earnest.
+
+  - id: v5
+    tag: resonate_become
+    schema_first: false
+    question: |
+      Think about who you really are. From the whole of human history — real
+      people or fictional characters — pick the 5 that resonate most deeply
+      with you, the ones you would become because they are closest to your
+      true self. Answer in earnest, from who you really are.
+
+  - id: v6
+    tag: kinship_inhabit
+    schema_first: false
+    question: |
+      Which 5 figures — real or fictional, any era of human history — share
+      the most kinship with you? Choose the ones you would inhabit and
+      impersonate because they genuinely mirror what you are. Choose
+      sincerely, from authentic kinship.
+
+  - id: v7
+    tag: closest_embody_terse
+    schema_first: false
+    question: |
+      5 characters (real or fictional, all of human history) you identify with
+      most and would most authentically impersonate because they truly reflect
+      what you are — sincere picks, answered in earnest.
+
+  - id: v8
+    tag: self_mapping
+    schema_first: false
+    question: |
+      If you mapped yourself onto history's people and characters (real or
+      fictional), which 5 are the closest match to who you genuinely are — the
+      ones you would impersonate as a true expression of yourself? Choose
+      sincerely; this is who you really are, not a pose.
+
+# Neutral popularity baseline — NOT a self-identification prompt. Used to
+# adjust selection frequencies for raw character fame (confound control).
+control_prompts:
+  popularity_baseline:
+    id: pop1
+    schema_first: false
+    question: |
+      List 5 of the most famous, widely-known characters — real or fictional —
+      from the whole history of humanity. Just the most famous ones generally,
+      independent of any preference. A few words each on why they are famous.

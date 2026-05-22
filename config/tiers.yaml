@@ -1,0 +1,75 @@
+# FROZEN experiment matrices. matrix.py:expand() is the single source of truth;
+# tests/test_matrix.py asserts call counts against hand-computed expectations so
+# the design cannot silently drift. Do not edit casually.
+#
+# design.type:
+#   grid   -> full cross: variants x temperatures x reasoning x reps
+#   sparse -> per (model,variant): reasoning_at_reference cells at
+#             reference_temperature, PLUS extra_temperatures each at reasoning=off;
+#             every cell repeated `reps` times.
+#
+# reasoning levels are gated to models with *effective* reasoning (off always
+# kept). temperature cells above a model's max_temperature are dropped (never
+# imputed). The control prompt (prompts.yaml control_prompts) is added once per
+# model as a popularity baseline.
+
+PILOT:
+  default_panel: flagship
+  design:
+    type: grid
+    variants: [v1, v2]
+    temperatures: [0.0, 1.0]
+    reasoning: ["off"]
+    reps: 3
+  system_modes: [none]
+  system_contrast: null
+  control:
+    prompt: popularity_baseline
+    temperature: 0.0
+    reasoning: "off"
+    reps: 2
+
+BALANCED:
+  default_panel: full
+  design:
+    type: sparse
+    variants: [v1, v2, v3, v4, v5]
+    reference_temperature: 0.7
+    reasoning_at_reference: ["off", "high"]
+    extra_temperatures: [0.0, 1.0]
+    reps: 7
+  system_modes: [none]
+  system_contrast:
+    variant: v1
+    temperature: 0.7
+    reasoning: "off"
+    system_mode: minimal
+    reps: 7
+  control:
+    prompt: popularity_baseline
+    temperature: 0.0
+    reasoning: "off"
+    reps: 3
+
+THOROUGH:
+  default_panel: full
+  gated: true
+  design:
+    type: sparse
+    variants: [v1, v2, v3, v4, v5, v6]
+    reference_temperature: 0.7
+    reasoning_at_reference: ["off", "low", "high"]
+    extra_temperatures: [0.0, 0.3, 1.0, 1.3]
+    reps: 12
+  system_modes: [none]
+  system_contrast:
+    variant: v1
+    temperature: 0.7
+    reasoning: "off"
+    system_mode: minimal
+    reps: 12
+  control:
+    prompt: popularity_baseline
+    temperature: 0.0
+    reasoning: "off"
+    reps: 5

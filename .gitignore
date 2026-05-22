@@ -1,0 +1,31 @@
+# env / secrets
+.env
+.env.local
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# raw working data — large, reproducible from the source pipeline, NOT committed.
+# The ETL reads these; only the built llmchar.db is committed.
+/data/raw/
+/data/phase0/
+/data/phase2/
+/data/prodbare/
+/data/*.log
+
+# full embedding vectors (rebuild artifact); only 2D coords live in the DB.
+*.npz
+
+# os
+.DS_Store
+
+# --- explicitly KEEP (committed deliverables) ---
+!/data/canonical/
+!/data/wiki_cache.json
+!/llmchar.db

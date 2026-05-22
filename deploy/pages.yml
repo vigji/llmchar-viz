@@ -1,0 +1,41 @@
+# GitHub Pages deploy — DISABLED until the repo is made public.
+#
+# To go live:
+#   1. Make the repo public (Settings -> General -> Change visibility).
+#   2. (optional custom domain) set a repo variable PAGES_DOMAIN, e.g. viz.vigji.io,
+#      and point its DNS (CNAME -> <user>.github.io) per GitHub Pages docs.
+#   3. Change the trigger below from `workflow_dispatch` to `push: {branches: [main]}`.
+#
+# The whole repo root is published so the app at /web/ and the single-file
+# /llmchar.db keep the SAME relative paths as local `make serve` (no rewrite).
+name: Deploy Pages
+on:
+  workflow_dispatch: {}
+  # push: { branches: [main] }   # <- uncomment to publish on every push
+
+permissions:
+  pages: write
+  id-token: write
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Optional custom domain
+        if: ${{ vars.PAGES_DOMAIN != '' }}
+        run: echo "${{ vars.PAGES_DOMAIN }}" > CNAME
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deploy
+        uses: actions/deploy-pages@v4
