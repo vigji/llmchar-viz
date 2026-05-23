@@ -20,8 +20,7 @@ db:
 	uv run --extra embed llmchar-viz-build
 
 serve:
-	@echo "open http://localhost:8000/web/"
-	python3 -m http.server 8000
+	python3 scripts/serve.py 8000
 
 clean:
 	rm -f llmchar.db vectors_*.npz
