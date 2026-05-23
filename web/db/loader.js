@@ -24,7 +24,11 @@ async function fetchWithProgress(url, onProgress) {
     ver = head.headers.get("etag") || head.headers.get("last-modified") || head.headers.get("content-length") || "";
   } catch (_) { /* HEAD unsupported: fall back to unversioned key */ }
   const cacheKey = url + (ver ? "?v=" + encodeURIComponent(ver) : "");
-  const cache = await caches.open(CACHE_NAME).catch(() => null);
+  // Cache Storage only exists in a secure context (HTTPS or localhost). Over
+  // plain HTTP on a LAN address `caches` is undefined — skip caching, just fetch.
+  const cache = (typeof caches !== "undefined")
+    ? await caches.open(CACHE_NAME).catch(() => null)
+    : null;
   if (cache) {
     const hit = await cache.match(cacheKey);
     if (hit) {
