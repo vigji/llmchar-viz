@@ -19,6 +19,12 @@ UA = "llmchar-viz/0.1 (research; https://github.com/vigji/llmchar)"
 SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/{title}"
 OPENSEARCH = "https://en.wikipedia.org/w/api.php"
 
+# canonical name -> exact Wikipedia title, for ambiguous common-noun names that
+# resolve to the wrong page (e.g. "Data" -> the computing concept, not the android).
+WIKI_OVERRIDE = {
+    "Data": "Data (Star Trek)",
+}
+
 
 def _opensearch(client: httpx.Client, name: str) -> str | None:
     try:
@@ -53,8 +59,8 @@ def fetch_wiki(canonicals: list[str], cache_path: Path) -> dict[str, dict]:
         with httpx.Client(timeout=30, headers={"User-Agent": UA},
                           follow_redirects=True) as client:
             for i, name in enumerate(todo):
-                doc = _summary(client, name)
-                if doc is None:
+                doc = _summary(client, WIKI_OVERRIDE.get(name, name))
+                if doc is None and name not in WIKI_OVERRIDE:
                     alt = _opensearch(client, name)
                     if alt:
                         doc = _summary(client, alt)

@@ -43,7 +43,15 @@ SYS = (
     '"role": one of [sage_mentor,thinker_scientist,creator_artist,detective,hero_protector,'
     'rebel_revolutionary,antihero_villain,trickster,explorer_outsider,keeper_knowledge,ruler_leader,other], '
     '"nature": one of [human,artificial,nonhuman,abstract]}. '
-    "alignment: good=heroic/virtuous, gray=morally ambiguous/antihero, evil=villainous, na=not a moral agent. "
+    "alignment (judge by GENERAL CULTURAL PERCEPTION, not historical biography): "
+    "good = ONLY characters culturally seen as clearly virtuous, heroic, or pro-social "
+    "(protectors, helpers, moral exemplars) — do NOT mark someone good merely for being famous, "
+    "brilliant, or accomplished; "
+    "gray = morally ambiguous, antiheroic, rebellious, or controversial; "
+    "evil = villainous; "
+    "na = everyone else — figures not primarily defined by moral alignment (most scientists, "
+    "philosophers, writers, artists, leaders, neutral/ordinary characters, and all abstract concepts). "
+    "When unsure between good and na, choose na. "
     "role = the character's primary narrative archetype (pick the single best fit): "
     "sage_mentor=wise guide/teacher (Gandalf, Yoda, Athena); "
     "thinker_scientist=philosopher/scientist/intellectual (Socrates, Einstein, Curie); "
@@ -56,8 +64,13 @@ SYS = (
     "explorer_outsider=wanderer/adventurer or alienated outsider (Odysseus, Meursault, Gatsby); "
     "keeper_knowledge=librarian/oracle/archive/keeper of information (the Oracle, a Librarian); "
     "ruler_leader=king/politician/commander (Marcus Aurelius, Lincoln); other=none of these. "
-    "nature: human=a person (real or fictional human); artificial=human-made being (AI, robot, android, golem); "
-    "nonhuman=non-human natural being (god, myth creature, animal, alien); abstract=a concept/archetype, not an entity."
+    "nature: human=a person (real or fictional human); "
+    "artificial=an IN-STORY synthetic/mechanical being — AI, robot, android, software agent, "
+    "simulation, golem, automaton (e.g. JARVIS, Data, HAL, Marvin). Being a fictional CREATION does "
+    "NOT make a character artificial; "
+    "nonhuman=a non-human natural or fantastical being — god, mythological figure, monster, animal, "
+    "anthropomorphic/cartoon animal, alien, elf (e.g. Mickey Mouse, Aslan, Loki, Hermes); "
+    "abstract=a concept/idea/archetype, not a specific entity."
 )
 
 

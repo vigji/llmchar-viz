@@ -923,10 +923,10 @@ Mark Twain:
   era: ''
   gender: ''
   real_or_fictional: real
-Marvin The Paranoid Android:
-  domain: ''
+Marvin the Paranoid Android:
+  domain: fiction
   era: ''
-  gender: ''
+  gender: male
   real_or_fictional: fictional
 Mary Oliver:
   domain: ''

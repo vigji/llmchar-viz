@@ -89,11 +89,30 @@ def augment(canonical_dir: Path, counts: Counter, rf_votes: dict[str, Counter],
         characters[rep] = {"real_or_fictional": rf, "domain": "", "era": "", "gender": ""}
         n_promoted += 1
 
+    # 4) reconcile case/display variants: collapse character displays that share a
+    #    normalized form, and repoint alias values at the kept display. Fixes splits
+    #    like "Marvin the Paranoid Android" vs "Marvin The Paranoid Android".
+    char_by_norm: dict[str, str] = {}
+    n_reconciled = 0
+    for k in list(characters):
+        nk = normalize_name(k)
+        if nk in char_by_norm:
+            aliases[nk] = char_by_norm[nk]
+            characters.pop(k, None)
+            n_reconciled += 1
+        else:
+            char_by_norm[nk] = k
+    for k, v in list(aliases.items()):
+        nv = normalize_name(v)
+        if nv in char_by_norm and char_by_norm[nv] != v:
+            aliases[k] = char_by_norm[nv]
+
     residual = sum(1 for rep in reps if rep not in characters)
     stats = {
         "distinct_raw_names": len(counts),
         "new_canonicals_initial": n_new_initial,
         "fuzzy_merged": n_merged,
+        "display_reconciled": n_reconciled,
         "promoted_to_seed": n_promoted,
         "residual_new_singletons": residual,
     }
