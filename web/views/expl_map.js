@@ -41,14 +41,14 @@ export default {
         name: nm, type: "scatter", large: true, largeThreshold: 2000, progressive: 4000,
         data: groups[nm].map((r) => ({ value: [r.x, r.y], ex: r.ex, canonical: r.canonical, model: r.model })),
         symbolSize: 5,
-        itemStyle: { color: nm === "noise" ? "#3a414e" : PALETTE[i % PALETTE.length], opacity: 0.55 },
+        itemStyle: { color: nm === "noise" ? "#cabfae" : PALETTE[i % PALETTE.length], opacity: 0.6 },
       }));
       if (centToggle.checked) {
         series.push({
           name: "models", type: "scatter",
           data: cents.map((c) => ({ value: [c.x, c.y], name: c.label })),
           symbol: "diamond", symbolSize: 16, z: 20,
-          itemStyle: { color: COLORS.hot, borderColor: "#000", borderWidth: 1 },
+          itemStyle: { color: COLORS.hot, borderColor: "#3d2b1f", borderWidth: 1 },
           label: { show: true, formatter: (p) => p.data.name, color: COLORS.ink, fontSize: 10, position: "right" },
         });
       }

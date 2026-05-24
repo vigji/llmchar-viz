@@ -29,7 +29,7 @@ export default {
       xAxis: { type: "category", data: labels, axisLabel: { rotate: 55, fontSize: 10, interval: 0 }, position: "top", splitArea: { show: true } },
       yAxis: { type: "category", data: labels, axisLabel: { fontSize: 10, interval: 0 }, splitArea: { show: true } },
       visualMap: { min: 0, max: 1, calculable: true, orient: "horizontal", left: "center", bottom: 0,
-        inRange: { color: ["#11141c", "#1c2230", COLORS.teal, COLORS.amber, COLORS.hot] }, textStyle: { color: COLORS.inkDim } },
+        inRange: { color: ["#f3eee3", "#e8d6bf", "#d8a86a", "#c56a33", "#bb4423"] }, textStyle: { color: COLORS.inkDim } },
       series: [{ type: "heatmap", data, emphasis: { itemStyle: { borderColor: COLORS.ink, borderWidth: 1 } } }],
     });
     chart.on("click", (p) => {

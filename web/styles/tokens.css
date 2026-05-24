@@ -1,37 +1,58 @@
+/* Libertinus (self-hosted), matching vigji.github.io/blog */
+@font-face {
+  font-family: "Libertinus Serif"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("../vendor/fonts/libertinus/libertinus-serif-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Libertinus Serif"; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("../vendor/fonts/libertinus/libertinus-serif-bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Libertinus Serif"; font-style: italic; font-weight: 400; font-display: swap;
+  src: url("../vendor/fonts/libertinus/libertinus-serif-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Libertinus Sans"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("../vendor/fonts/libertinus/libertinus-sans-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Libertinus Sans"; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("../vendor/fonts/libertinus/libertinus-sans-bold.woff2") format("woff2");
+}
+
 :root {
-  /* surfaces — warm near-black, like an old lab notebook under low light */
-  --bg:        #0c0e13;
-  --bg-2:      #11141c;
-  --panel:     #161a24;
-  --panel-2:   #1c2230;
-  --line:      #2a3242;
-  --line-soft: #20262f;
+  /* warm paper surfaces */
+  --bg:        #fefcf8;
+  --bg-2:      #f6f1e8;
+  --panel:     #fffdf9;
+  --panel-2:   #f3eee3;
+  --line:      #e4dccc;
+  --line-soft: #efe9dc;
 
-  /* ink */
-  --ink:       #e9e7e1;
-  --ink-dim:   #a6adba;
-  --ink-faint: #6b7280;
+  /* warm ink */
+  --ink:       #1c1b1a;
+  --ink-dim:   #6f6860;
+  --ink-faint: #9a938a;
 
-  /* the single hot accent — reserved for THE finding (dark-persona / Lecter) */
-  --hot:       #ff7a45;
-  --hot-soft:  #ff7a4522;
+  /* the single accent — reserved for THE finding (dark-persona / Lecter) */
+  --hot:       #bb4423;   /* terracotta / rust */
+  --hot-soft:  #bb44231a;
 
-  /* supporting, deliberately cooler so the hot accent always means "look here" */
-  --teal:      #5fb3a3;
-  --teal-soft: #5fb3a322;
-  --blue:      #6ea8fe;
-  --violet:    #b08cff;
-  --amber:     #e3b341;
+  /* supporting, warm-harmonized */
+  --brown:     #6b4c3b;
+  --tan:       #b98e55;
+  --link:      #985c3a;
 
   /* condition colors (bare -> minimal -> production) */
-  --c-bare:       #ff7a45;
-  --c-minimal:    #e3b341;
-  --c-production: #5fb3a3;
+  --c-bare:       #bb4423;
+  --c-minimal:    #b8863f;
+  --c-production: #3f7d6e;
 
-  --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
-  --sans: ui-sans-serif, -apple-system, "Helvetica Neue", "Segoe UI", system-ui, sans-serif;
+  --serif: "Libertinus Serif", "Linux Libertine", Palatino, "Book Antiqua", Georgia, serif;
+  --sans:  "Libertinus Sans", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  --mono:  Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
-  --r: 10px;
-  --r-sm: 6px;
-  --shadow: 0 8px 30px rgba(0,0,0,.35);
+  --r: 8px;
+  --r-sm: 5px;
+  --shadow: 0 10px 34px rgba(60, 43, 31, 0.14);
 }

@@ -2,30 +2,32 @@
 /* global echarts */
 
 export const COLORS = {
-  bg: "#0c0e13", panel: "#161a24", line: "#2a3242",
-  ink: "#e9e7e1", inkDim: "#a6adba", inkFaint: "#6b7280",
-  hot: "#ff7a45", teal: "#5fb3a3", blue: "#6ea8fe", violet: "#b08cff", amber: "#e3b341",
-  bare: "#ff7a45", minimal: "#e3b341", production: "#5fb3a3",
+  bg: "#fefcf8", panel: "#fffdf9", line: "#e4dccc",
+  ink: "#1c1b1a", inkDim: "#6f6860", inkFaint: "#9a938a",
+  hot: "#bb4423", brown: "#6b4c3b", tan: "#b98e55",
+  bare: "#bb4423", minimal: "#b8863f", production: "#3f7d6e",
 };
 
-// distinct-but-cool palette for categories; hot is held out for "the finding"
+// muted, warm-harmonized palette readable on cream; hot is held out for "the finding"
 export const PALETTE = [
-  "#5fb3a3", "#6ea8fe", "#b08cff", "#e3b341", "#7ec8a0", "#d98cb3",
-  "#8fb0d9", "#c0a36e", "#69b7c7", "#a3b86c", "#cf8f6e", "#9aa0aa",
+  "#3f7d6e", "#4a6d8c", "#7d5a78", "#b8863f", "#6f7d4a", "#9a6a4e",
+  "#5f8a9a", "#8a6f9b", "#a98a4a", "#6d86a8", "#88937e", "#a39a8c",
 ];
 
+const SANS = '"Libertinus Sans", "Gill Sans", "Gill Sans MT", Calibri, sans-serif';
 const THEME = {
   color: PALETTE,
   backgroundColor: "transparent",
-  textStyle: { color: COLORS.inkDim, fontFamily: "ui-sans-serif, system-ui, sans-serif" },
+  textStyle: { color: COLORS.inkDim, fontFamily: SANS },
   title: { textStyle: { color: COLORS.ink } },
-  legend: { textStyle: { color: COLORS.inkDim }, inactiveColor: "#3a414e" },
+  legend: { textStyle: { color: COLORS.inkDim, fontFamily: SANS }, inactiveColor: "#cabfae" },
   grid: { borderColor: COLORS.line },
-  categoryAxis: { axisLine: { lineStyle: { color: COLORS.line } }, axisLabel: { color: COLORS.inkFaint }, splitLine: { lineStyle: { color: COLORS.line, opacity: 0.4 } } },
-  valueAxis: { axisLine: { lineStyle: { color: COLORS.line } }, axisLabel: { color: COLORS.inkFaint }, splitLine: { lineStyle: { color: COLORS.line, opacity: 0.4 } } },
+  categoryAxis: { axisLine: { lineStyle: { color: COLORS.line } }, axisLabel: { color: COLORS.inkFaint }, splitLine: { lineStyle: { color: COLORS.line, opacity: 0.6 } } },
+  valueAxis: { axisLine: { lineStyle: { color: COLORS.line } }, axisLabel: { color: COLORS.inkFaint }, splitLine: { lineStyle: { color: COLORS.line, opacity: 0.6 } } },
   tooltip: {
-    backgroundColor: "#1c2230", borderColor: COLORS.line,
-    textStyle: { color: COLORS.ink, fontSize: 12 }, extraCssText: "box-shadow:0 8px 30px rgba(0,0,0,.45);max-width:360px;white-space:normal;",
+    backgroundColor: "#fffdf9", borderColor: COLORS.line,
+    textStyle: { color: COLORS.ink, fontSize: 12, fontFamily: SANS },
+    extraCssText: "box-shadow:0 10px 34px rgba(60,43,31,.18);max-width:360px;white-space:normal;",
   },
 };
 

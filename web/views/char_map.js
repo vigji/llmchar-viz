@@ -57,7 +57,7 @@ export default {
           name: "models", type: "scatter",
           data: cents.map((c) => ({ value: [c.x, c.y], name: c.label })),
           symbol: "diamond", symbolSize: 16,
-          itemStyle: { color: COLORS.hot, borderColor: "#000", borderWidth: 1 },
+          itemStyle: { color: COLORS.hot, borderColor: "#3d2b1f", borderWidth: 1 },
           label: { show: true, formatter: (p) => p.data.name, color: COLORS.ink, fontSize: 10, position: "right" },
           z: 20, tooltip: { formatter: (p) => `model: <b>${p.data.name}</b>` },
         });

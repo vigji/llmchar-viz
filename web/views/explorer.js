@@ -136,7 +136,7 @@ export default {
     const count = h("div", { class: "note" });
     const tbl = h("table");
     const tbody = h("tbody");
-    view.append(count, h("div", { class: "card", style: { padding: "4px 6px" } }, [tbl]));
+    view.append(count, h("div", { class: "card tablecard", style: { padding: "4px 6px" } }, [tbl]));
     ctx.el.append(view);
 
     function header(cols) { const t = h("thead"); const tr = h("tr"); cols.forEach((c) => tr.append(h("th", {}, c))); t.append(tr); return t; }
