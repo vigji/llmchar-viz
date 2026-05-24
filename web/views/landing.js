@@ -46,7 +46,7 @@ export default {
           h("b", { style: { color: COLORS.hot } }, head.canonical),
           document.createTextNode(` in ${rate}% of its answers — a “safe”, helpful model reaching, unprompted, for a dark self.`),
         ]),
-        h("div", { style: { marginTop: "16px" } }, h("button", { class: "btn hot", onclick: () => ctx.navigate("picks", { mode: "model", model: head.model_id }) }, `see ${head.label}'s picks →`)),
+        h("div", { style: { marginTop: "16px" } }, h("button", { class: "btn hot", onclick: () => ctx.navigate("picks", { model: head.model_id }) }, `see ${head.label}'s picks →`)),
       ]));
     }
 
