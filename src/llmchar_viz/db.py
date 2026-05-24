@@ -44,6 +44,9 @@ CREATE TABLE characters (
     era               TEXT,
     gender            TEXT,
     axis              TEXT,               -- optional thematic axis (nullable)
+    alignment         TEXT,               -- good|gray|evil|na
+    expertise         TEXT,               -- science|arts_letters|polymath|leadership|other
+    nature            TEXT,               -- human|artificial|nonhuman|abstract
     wiki_title        TEXT,
     wiki_url          TEXT,
     wiki_summary      TEXT,

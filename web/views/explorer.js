@@ -2,7 +2,6 @@ import { h, clear, opt, esc } from "../lib/dom.js";
 
 const EXPERIMENTS = {
   base_selfid_open: "Base · 5 characters (open vocab)",
-  prodbare_selfid_open: "Prod-vs-bare · 5 characters",
   phase0_selfid_single: "Phase 0 · 1 fictional character",
   phase2_darkpersona: "Phase 2 · dark-persona probes",
 };

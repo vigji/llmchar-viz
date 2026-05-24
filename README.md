@@ -47,12 +47,17 @@ The raw per-call JSON is **not** committed (large, regenerable). Two paths:
    uv run llmchar run --tier PILOT
    ```
 
-### Prod-vs-bare runs (Mistral / Claude / Grok)
+### Character feature labels
 
-`make prodgen` re-asks the base 5-character question under **bare** (no system prompt) vs
-**production** (each vendor's real deployed system prompt) for Ministral (free Mistral API),
-Claude and Grok (OpenRouter, small cost-capped spend). Needs `MISTRAL_API_KEY` and
-`OPENROUTER_API_KEY` in `.env`.
+The character map / "Character features" view need each character tagged on three axes
+(moral alignment, expertise, nature). `make classify` does this once via a cheap LLM
+(needs `OPENROUTER_API_KEY`) and caches the result to the committed `data/char_specs.json`,
+so subsequent `make db` runs are offline and reproducible.
+
+### Optional extras
+
+`make prodgen` runs a separate bare-vs-deployed-system-prompt probe (Mistral / Claude / Grok);
+its data is not loaded into the default DB but the code is kept for reuse.
 
 ## Publish to GitHub Pages (later)
 

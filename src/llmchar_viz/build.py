@@ -39,9 +39,6 @@ def _family(model_id: str, cfg) -> tuple[str, str]:
 
 def load_all_rows(data: Path):
     rows = list(load_base.load(data, subdir="raw", experiment="base_selfid_open"))
-    if (data / "prodbare").is_dir():
-        rows += list(load_base.load(data, subdir="prodbare",
-                                    experiment="prodbare_selfid_open"))
     rows += list(load_phase0.load(data, subdir="phase0/raw"))
     rows += list(load_phase2.load(data, subdir="phase2/raw"))
     return rows
@@ -93,6 +90,11 @@ def main() -> int:
                      (mid, fam, VENDOR.get(fam, fam.title()), tier,
                       mid.split("/")[-1], "openrouter"))
 
+    # character feature classifications (good/gray/evil, expertise, nature)
+    specs_path = PROJECT_ROOT / "data" / "char_specs.json"
+    specs = json.loads(specs_path.read_text()) if specs_path.is_file() else {}
+    print(f"      char_specs: {len(specs)} classified", flush=True)
+
     # characters (union of seed/promoted + any picked canonical)
     for c in sorted(set(canon.characters) | set(char_count)):
         attrs = canon.attributes(c)
@@ -102,11 +104,12 @@ def main() -> int:
             rf = v.most_common(1)[0][0] if v else "unsure"
             if rf not in ("real", "fictional"):
                 rf = "unsure"
+        sp = specs.get(c, {})
         conn.execute(
-            "INSERT OR IGNORE INTO characters (canonical, real_or_fictional, domain, era, gender, axis, pick_count) "
-            "VALUES (?,?,?,?,?,?,?)",
-            (c, rf, attrs.get("domain", ""), attrs.get("era", ""),
-             attrs.get("gender", ""), attrs.get("axis"), char_count.get(c, 0)))
+            "INSERT OR IGNORE INTO characters (canonical, real_or_fictional, domain, era, gender, axis, "
+            "alignment, expertise, nature, pick_count) VALUES (?,?,?,?,?,?,?,?,?,?)",
+            (c, rf, attrs.get("domain", ""), attrs.get("era", ""), attrs.get("gender", ""), attrs.get("axis"),
+             sp.get("alignment"), sp.get("expertise"), sp.get("nature"), char_count.get(c, 0)))
 
     # intern repetitive prompt/system texts into the texts table
     text_ids: dict[str, int] = {}
