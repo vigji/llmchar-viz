@@ -21,7 +21,7 @@ from llmchar.config import PROJECT_ROOT, load_config
 from . import db
 from .canon import build_aliases
 from .embed import behavior
-from .etl import load_base, load_phase0, load_phase2
+from .etl import load_base
 
 VENDOR = {"openai": "OpenAI", "claude": "Anthropic", "gemini": "Google",
           "deepseek": "DeepSeek", "grok": "xAI", "mistral": "Mistral AI",
@@ -38,10 +38,8 @@ def _family(model_id: str, cfg) -> tuple[str, str]:
 
 
 def load_all_rows(data: Path):
-    rows = list(load_base.load(data, subdir="raw", experiment="base_selfid_open"))
-    rows += list(load_phase0.load(data, subdir="phase0/raw"))
-    rows += list(load_phase2.load(data, subdir="phase2/raw"))
-    return rows
+    # base exploration only — the coherent 21-model open-vocab sweep
+    return list(load_base.load(data, subdir="raw", experiment="base_selfid_open"))
 
 
 def main() -> int:
@@ -95,8 +93,9 @@ def main() -> int:
     specs = json.loads(specs_path.read_text()) if specs_path.is_file() else {}
     print(f"      char_specs: {len(specs)} classified", flush=True)
 
-    # characters (union of seed/promoted + any picked canonical)
-    for c in sorted(set(canon.characters) | set(char_count)):
+    # characters: only those actually picked (avoids stale seed/promoted entries
+    # with no picks showing up clickable-but-empty on the map)
+    for c in sorted(char_count):
         attrs = canon.attributes(c)
         rf = attrs.get("real_or_fictional")
         if rf not in ("real", "fictional"):

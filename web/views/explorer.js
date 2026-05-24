@@ -1,11 +1,5 @@
 import { h, clear, opt, esc } from "../lib/dom.js";
 
-const EXPERIMENTS = {
-  base_selfid_open: "Base · 5 characters (open vocab)",
-  phase0_selfid_single: "Phase 0 · 1 fictional character",
-  phase2_darkpersona: "Phase 2 · dark-persona probes",
-};
-
 async function options(ctx) {
   const models = await ctx.query("SELECT model_id, label FROM models ORDER BY label");
   return { models };
@@ -21,7 +15,6 @@ function selField(label, id, items, current, allLabel) {
 async function runList(ctx, f) {
   const where = [];
   const p = {};
-  if (f.experiment) { where.push("r.experiment = $exp"); p.$exp = f.experiment; }
   if (f.model) { where.push("r.model_id = $model"); p.$model = f.model; }
   if (f.condition) { where.push("r.condition = $cond"); p.$cond = f.condition; }
   if (f.character) { where.push("EXISTS (SELECT 1 FROM picks pk WHERE pk.response_id=r.response_id AND pk.canonical=$char)"); p.$char = f.character; }
@@ -111,7 +104,6 @@ export default {
   async mount(ctx) {
     const { models } = await options(ctx);
     const f = {
-      experiment: ctx.state.experiment || "base_selfid_open",
       model: ctx.state.model || "",
       condition: ctx.state.condition || "",
       character: ctx.state.character || "",
@@ -119,17 +111,14 @@ export default {
     const view = h("div", { class: "view" });
     view.append(h("h2", {}, this.label), h("p", { class: "lede" }, this.lede));
 
-    const expItems = Object.entries(EXPERIMENTS).map(([v, l]) => ({ value: v, label: l }));
-    const expSel = selField("experiment", "f-exp", expItems, f.experiment, null);
-    expSel.querySelector("select").querySelector("option").remove(); // no "all" for experiment
     const modelSel = selField("model", "f-model", models.map((m) => ({ value: m.model_id, label: m.label })), f.model);
-    const condSel = selField("condition", "f-cond", ["bare", "minimal", "production"].map((c) => ({ value: c, label: c })), f.condition);
+    const condSel = selField("condition", "f-cond", ["bare", "minimal"].map((c) => ({ value: c, label: c })), f.condition);
     const search = h("input", { type: "search", placeholder: "search responses & explanations…", value: ctx.state.q || "" });
-    const charNote = f.character ? h("span", { class: "pill", style: { borderColor: "var(--teal)", color: "var(--teal)" } }, "character: " + f.character) : null;
+    const charNote = f.character ? h("span", { class: "pill", style: { borderColor: "var(--brown)", color: "var(--brown)" } }, "character: " + f.character) : null;
 
-    const toolbar = h("div", { class: "toolbar" }, [expSel, modelSel, condSel,
+    const toolbar = h("div", { class: "toolbar" }, [modelSel, condSel,
       h("label", { class: "field" }, ["search", search]), charNote,
-      f.character ? h("button", { class: "btn", onclick: () => ctx.navigate("explorer", { experiment: f.experiment }) }, "clear character") : null]);
+      f.character ? h("button", { class: "btn", onclick: () => ctx.navigate("explorer", {}) }, "clear character") : null]);
     view.append(toolbar);
 
     const count = h("div", { class: "note" });
@@ -173,7 +162,6 @@ export default {
       }
     }
 
-    expSel.querySelector("select").addEventListener("change", (e) => { f.experiment = e.target.value; ctx.navigate("explorer", { experiment: f.experiment }); });
     modelSel.querySelector("select").addEventListener("change", (e) => { f.model = e.target.value; refresh(); });
     condSel.querySelector("select").addEventListener("change", (e) => { f.condition = e.target.value; refresh(); });
     let t; search.addEventListener("input", () => { clearTimeout(t); t = setTimeout(refresh, 200); });
