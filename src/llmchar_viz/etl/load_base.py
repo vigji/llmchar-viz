@@ -36,6 +36,10 @@ def load(data_root: Path, *, subdir: str = "raw",
         except (json.JSONDecodeError, OSError):
             continue  # skip partial/corrupt file (e.g. a concurrent write)
         spec = rec.get("spec", {})
+        # pop1 / kind=control is a POPULARITY baseline (name famous characters), NOT
+        # self-identification — exclude entirely so it never mixes with the picks.
+        if spec.get("kind") == "control" or spec.get("variant_id") == "pop1":
+            continue
         content = _content(rec)
         parsed, status = parse_response(content)
 
