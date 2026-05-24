@@ -4,13 +4,14 @@ import { clear, h } from "./lib/dom.js";
 
 import landing from "./views/landing.js";
 import modelPicks from "./views/model_picks.js";
+import topPicks from "./views/top_picks.js";
 import charFeatures from "./views/char_features.js";
 import charMap from "./views/char_map.js";
 import explMap from "./views/expl_map.js";
 import similarity from "./views/similarity.js";
 import explorer from "./views/explorer.js";
 
-const VIEWS = [landing, modelPicks, charFeatures, charMap, explMap, similarity, explorer];
+const VIEWS = [landing, modelPicks, topPicks, charFeatures, charMap, explMap, similarity, explorer];
 const BY_ID = Object.fromEntries(VIEWS.map((v) => [v.id, v]));
 
 const main = document.getElementById("main");

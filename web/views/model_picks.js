@@ -43,18 +43,20 @@ export default {
 
       // ascending so the most-picked sits at the top with yAxis inverse
       const data = rows.slice().reverse();
+      const maxN = data.length ? Math.max(...data.map((d) => d.n)) : 1;
       const windowCount = Math.min(22, data.length);
       const startPct = data.length > windowCount ? 100 * (1 - windowCount / data.length) : 0;
 
       chart.setOption({
         grid: { left: 160, right: 40, top: 12, bottom: 24 },
         tooltip: { trigger: "item", formatter: (p) => `<b>${p.name}</b><br/>${(100 * p.value / denom).toFixed(1)}% · ${p.value}/${denom}<br/><span style="color:${COLORS.inkFaint}">click for rationales</span>` },
-        xAxis: { type: "value", name: "pick rate (%)", nameLocation: "middle", nameGap: 30,
+        xAxis: { type: "value", max: maxN, name: "pick rate (%)", nameLocation: "middle", nameGap: 30,
           axisLabel: { formatter: (v) => (100 * v / denom).toFixed(0) } },
         yAxis: { type: "category", data: data.map((d) => d.name), axisLabel: { fontSize: 11, width: 150, overflow: "truncate" } },
         dataZoom: [
-          { type: "slider", yAxisIndex: 0, start: startPct, end: 100, width: 14, right: 6 },
-          { type: "inside", yAxisIndex: 0, start: startPct, end: 100 },
+          // zoomLock keeps the window span fixed, so scrolling pans without resizing bars
+          { type: "slider", yAxisIndex: 0, start: startPct, end: 100, width: 14, right: 6, zoomLock: true, brushSelect: false },
+          { type: "inside", yAxisIndex: 0, start: startPct, end: 100, zoomLock: true, zoomOnMouseWheel: false, moveOnMouseWheel: true, moveOnMouseMove: true },
         ],
         series: [{
           type: "bar", data: data.map((d) => ({ value: d.n, name: d.name,
