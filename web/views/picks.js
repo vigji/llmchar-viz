@@ -109,12 +109,15 @@ export default {
 
       const cb = colorSel.value;
       const data = rows.slice().reverse();
+      // scale the axis to the current filtered set's max: rescales when filters change,
+      // but is constant across a scroll (computed from all rows, not the visible window)
+      const maxN = Math.max(...rows.map((r) => r.n));
       const windowCount = Math.min(22, data.length);
       const startPct = data.length > windowCount ? 100 * (1 - windowCount / data.length) : 0;
       chart.setOption({
         grid: { left: 168, right: 40, top: 12, bottom: 26 },
         tooltip: { trigger: "item", formatter: (q) => `<b>${q.name}</b><br/>${(100 * q.value / denom).toFixed(1)}% · ${q.value}/${denom}<br/><span style="color:${COLORS.inkFaint}">${scope === "model" ? "click for rationales" : "click to see which models"}</span>` },
-        xAxis: { type: "value", max: denom, name: "pick rate (%)", nameLocation: "middle", nameGap: 30, axisLabel: { formatter: (x) => (100 * x / denom).toFixed(0) } },
+        xAxis: { type: "value", max: maxN, name: "picks", nameLocation: "middle", nameGap: 30 },
         yAxis: { type: "category", data: data.map((d) => d.name), axisLabel: { fontSize: 11, width: 156, overflow: "truncate" } },
         dataZoom: data.length > windowCount ? [
           { type: "slider", yAxisIndex: 0, start: startPct, end: 100, width: 14, right: 6, zoomLock: true, brushSelect: false },
