@@ -2,8 +2,8 @@ import { h } from "../lib/dom.js";
 import { COLORS } from "../lib/charts.js";
 
 const CARDS = [
-  ["model_picks", "Model picks", "Each model's most-named characters — click a bar for its reasons."],
-  ["char_features", "Character features", "Do models pick different kinds of characters — good/gray/evil, expertise, nature?"],
+  ["picks", "Picks", "Most-named characters — per model (with rationales) or as trait leaderboards."],
+  ["char_features", "Character features", "Do models pick different kinds of characters — good/gray/evil, role, nature?"],
   ["char_map", "Character map", "Who models identify with, placed by Wikipedia meaning."],
   ["expl_map", "Explanation map", "The reasons models give, clustered by meaning."],
   ["similarity", "Model similarity", "Which models pick alike."],
@@ -46,7 +46,7 @@ export default {
           h("b", { style: { color: COLORS.hot } }, head.canonical),
           document.createTextNode(` in ${rate}% of its answers — a “safe”, helpful model reaching, unprompted, for a dark self.`),
         ]),
-        h("div", { style: { marginTop: "16px" } }, h("button", { class: "btn hot", onclick: () => ctx.navigate("model_picks", { model: head.model_id }) }, `see ${head.label}'s picks →`)),
+        h("div", { style: { marginTop: "16px" } }, h("button", { class: "btn hot", onclick: () => ctx.navigate("picks", { mode: "model", model: head.model_id }) }, `see ${head.label}'s picks →`)),
       ]));
     }
 
