@@ -1,13 +1,11 @@
-import { h, clear, opt } from "../lib/dom.js";
+import { h, opt } from "../lib/dom.js";
 import { makeChart, COLORS } from "../lib/charts.js";
-
-const ALIGN_COLOR = { good: COLORS.production, gray: COLORS.minimal, evil: COLORS.hot, na: "#a39a8c" };
-const ALIGN_LABEL = { good: "good", gray: "morally gray", evil: "evil", na: "n/a" };
+import { TRAITS, traitColor } from "../lib/traits.js";
 
 export default {
   id: "model_picks",
   label: "Model picks",
-  lede: "Each model's most-named characters on the open-vocab question. Bars are colored by moral alignment; click one to read that model's reasons for the pick.",
+  lede: "Each model's most-named characters on the open-vocab question. Bars are colored by a character trait; click one to read that model's reasons for the pick.",
   async mount(ctx) {
     const models = await ctx.query(`
       SELECT m.model_id, m.label FROM models m
@@ -16,32 +14,38 @@ export default {
     const cur = ctx.state.model && models.find((m) => m.model_id === ctx.state.model)
       ? ctx.state.model
       : (models.find((m) => m.model_id.includes("ministral-8b")) || models[0]).model_id;
+    const colorBy = TRAITS[ctx.state.color] ? ctx.state.color : "alignment";
 
     const view = h("div", { class: "view" });
     view.append(h("h2", {}, this.label), h("p", { class: "lede" }, this.lede));
-    const sel = h("select", {}, models.map((m) => opt(m.model_id, m.label, m.model_id === cur)));
-    view.append(h("div", { class: "toolbar" }, [h("label", { class: "field" }, ["model", sel])]));
-    view.append(h("div", { class: "legend" }, Object.entries(ALIGN_LABEL).map(([k, v]) =>
-      h("span", {}, [h("i", { style: { background: ALIGN_COLOR[k] } }), v]))));
+    const modelSel = h("select", {}, models.map((m) => opt(m.model_id, m.label, m.model_id === cur)));
+    const colorSel = h("select", {}, Object.entries(TRAITS).map(([k, t]) => opt(k, t.label, k === colorBy)));
+    view.append(h("div", { class: "toolbar" }, [
+      h("label", { class: "field" }, ["model", modelSel]),
+      h("label", { class: "field" }, ["color by", colorSel]),
+    ]));
+    const legend = h("div", { class: "legend" });
+    const t = TRAITS[colorBy];
+    legend.append(...t.values.map((v) => h("span", {}, [h("i", { style: { background: t.colors[v] } }), t.disp[v]])));
     const note = h("div", { class: "note" });
     const chartEl = h("div", { class: "chart tall card" });
-    view.append(note, chartEl);
+    view.append(legend, note, chartEl);
     ctx.el.append(view);
     const chart = makeChart(chartEl);
 
     async function draw() {
-      const m = sel.value;
+      const m = modelSel.value;
       const denom = (await ctx.queryOne(
         "SELECT COUNT(*) n FROM responses WHERE model_id=$m AND experiment='base_selfid_open'", { $m: m })).n || 1;
       const rows = await ctx.query(`
-        SELECT p.canonical AS name, c.alignment AS al, COUNT(DISTINCT p.response_id) AS n
+        SELECT p.canonical AS name, c.alignment AS alignment, c.role AS role, c.nature AS nature,
+               COUNT(DISTINCT p.response_id) AS n
         FROM picks p JOIN responses r ON p.response_id=r.response_id
         JOIN characters c ON c.canonical=p.canonical
         WHERE r.model_id=$m AND r.experiment='base_selfid_open'
         GROUP BY p.canonical ORDER BY n DESC`, { $m: m });
       note.textContent = `${rows.length} distinct characters across ${denom} answers — scroll within the chart for the full list`;
 
-      // ascending so the most-picked sits at the top with yAxis inverse
       const data = rows.slice().reverse();
       const maxN = data.length ? Math.max(...data.map((d) => d.n)) : 1;
       const windowCount = Math.min(22, data.length);
@@ -54,28 +58,28 @@ export default {
           axisLabel: { formatter: (v) => (100 * v / denom).toFixed(0) } },
         yAxis: { type: "category", data: data.map((d) => d.name), axisLabel: { fontSize: 11, width: 150, overflow: "truncate" } },
         dataZoom: [
-          // zoomLock keeps the window span fixed, so scrolling pans without resizing bars
           { type: "slider", yAxisIndex: 0, start: startPct, end: 100, width: 14, right: 6, zoomLock: true, brushSelect: false },
           { type: "inside", yAxisIndex: 0, start: startPct, end: 100, zoomLock: true, zoomOnMouseWheel: false, moveOnMouseWheel: true, moveOnMouseMove: true },
         ],
         series: [{
-          type: "bar", data: data.map((d) => ({ value: d.n, name: d.name,
-            itemStyle: { color: ALIGN_COLOR[d.al] || ALIGN_COLOR.na, borderRadius: [0, 3, 3, 0] } })),
-          barMaxWidth: 16,
+          type: "bar", barMaxWidth: 16,
+          data: data.map((d) => ({ value: d.n, name: d.name,
+            itemStyle: { color: traitColor(colorBy, d[colorBy]), borderRadius: [0, 3, 3, 0] } })),
         }],
       }, true);
 
       chart.off("click");
-      chart.on("click", (p) => openRationales(ctx, m, sel.options[sel.selectedIndex].text, p.name));
+      chart.on("click", (p) => openRationales(ctx, m, modelSel.options[modelSel.selectedIndex].text, p.name));
     }
-    sel.addEventListener("change", () => ctx.navigate("model_picks", { model: sel.value }));
+    modelSel.addEventListener("change", () => ctx.navigate("model_picks", { model: modelSel.value, color: colorBy }));
+    colorSel.addEventListener("change", () => ctx.navigate("model_picks", { model: modelSel.value, color: colorSel.value }));
     draw();
   },
 };
 
 async function openRationales(ctx, model_id, modelLabel, canonical) {
   const rows = await ctx.query(`
-    SELECT p.explanation AS ex, p.rank AS rk, r.temperature AS t
+    SELECT p.explanation AS ex, p.rank AS rk
     FROM picks p JOIN responses r ON p.response_id=r.response_id
     WHERE r.model_id=$m AND p.canonical=$c AND r.experiment='base_selfid_open'
       AND p.explanation IS NOT NULL AND trim(p.explanation) <> ''
