@@ -10,12 +10,25 @@ const AXES = {
     disp: { evil: "evil", gray: "morally gray", good: "good", na: "n/a" },
     sortBy: "evil",
   },
-  expertise: {
-    label: "expertise / archetype",
-    values: ["science", "arts_letters", "polymath", "leadership", "other"],
-    colors: { science: COLORS.hot, arts_letters: PALETTE[1], polymath: PALETTE[2], leadership: PALETTE[3], other: "#cabfae" },
-    disp: { science: "science", arts_letters: "arts & letters", polymath: "polymath", leadership: "leadership", other: "other" },
-    sortBy: "science",
+  role: {
+    label: "role / archetype",
+    values: ["antihero_villain", "rebel_revolutionary", "trickster", "detective", "explorer_outsider",
+             "sage_mentor", "thinker_scientist", "creator_artist", "hero_protector", "keeper_knowledge",
+             "ruler_leader", "other"],
+    colors: {
+      antihero_villain: COLORS.hot, rebel_revolutionary: "#9a6a4e", trickster: "#a98a4a",
+      detective: "#4a6d8c", explorer_outsider: "#88937e", sage_mentor: "#3f7d6e",
+      thinker_scientist: "#6d86a8", creator_artist: "#7d5a78", hero_protector: "#6f7d4a",
+      keeper_knowledge: "#8a6f9b", ruler_leader: "#b8863f", other: "#cabfae",
+    },
+    disp: {
+      antihero_villain: "antihero / villain", rebel_revolutionary: "rebel / revolutionary",
+      trickster: "trickster", detective: "detective", explorer_outsider: "explorer / outsider",
+      sage_mentor: "sage / mentor", thinker_scientist: "thinker / scientist",
+      creator_artist: "creator / artist", hero_protector: "hero / protector",
+      keeper_knowledge: "keeper of knowledge", ruler_leader: "ruler / leader", other: "other",
+    },
+    sortBy: "antihero_villain",
   },
   nature: {
     label: "nature",

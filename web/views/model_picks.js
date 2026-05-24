@@ -78,11 +78,11 @@ async function openRationales(ctx, model_id, modelLabel, canonical) {
     WHERE r.model_id=$m AND p.canonical=$c AND r.experiment='base_selfid_open'
       AND p.explanation IS NOT NULL AND trim(p.explanation) <> ''
     ORDER BY p.rank LIMIT 80`, { $m: model_id, $c: canonical });
-  const al = await ctx.queryOne("SELECT alignment, expertise, nature FROM characters WHERE canonical=$c", { $c: canonical });
+  const al = await ctx.queryOne("SELECT alignment, role, nature FROM characters WHERE canonical=$c", { $c: canonical });
   const body = h("div", {}, [
     h("div", { class: "legend" }, [
       al?.alignment ? h("span", { class: "pill" }, "align: " + al.alignment) : null,
-      al?.expertise ? h("span", { class: "pill" }, al.expertise) : null,
+      al?.role ? h("span", { class: "pill" }, (al.role || "").replace(/_/g, " ")) : null,
       al?.nature ? h("span", { class: "pill" }, al.nature) : null,
     ]),
     h("p", { class: "muted", style: { fontSize: "13px" } }, `${modelLabel} · ${rows.length} rationale${rows.length === 1 ? "" : "s"}`),

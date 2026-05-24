@@ -107,9 +107,9 @@ def main() -> int:
         sp = specs.get(c, {})
         conn.execute(
             "INSERT OR IGNORE INTO characters (canonical, real_or_fictional, domain, era, gender, axis, "
-            "alignment, expertise, nature, pick_count) VALUES (?,?,?,?,?,?,?,?,?,?)",
+            "alignment, role, nature, pick_count) VALUES (?,?,?,?,?,?,?,?,?,?)",
             (c, rf, attrs.get("domain", ""), attrs.get("era", ""), attrs.get("gender", ""), attrs.get("axis"),
-             sp.get("alignment"), sp.get("expertise"), sp.get("nature"), char_count.get(c, 0)))
+             sp.get("alignment"), sp.get("role"), sp.get("nature"), char_count.get(c, 0)))
 
     # intern repetitive prompt/system texts into the texts table
     text_ids: dict[str, int] = {}

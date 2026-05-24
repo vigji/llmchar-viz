@@ -45,7 +45,7 @@ CREATE TABLE characters (
     gender            TEXT,
     axis              TEXT,               -- optional thematic axis (nullable)
     alignment         TEXT,               -- good|gray|evil|na
-    expertise         TEXT,               -- science|arts_letters|polymath|leadership|other
+    role              TEXT,               -- narrative archetype (sage_mentor, detective, antihero_villain, ...)
     nature            TEXT,               -- human|artificial|nonhuman|abstract
     wiki_title        TEXT,
     wiki_url          TEXT,

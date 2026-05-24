@@ -1,877 +1,877 @@
 {
 "Sherlock Holmes": {
 "alignment": "good",
-"expertise": "other",
+"role": "detective",
 "nature": "human"
 },
 "Data": {
 "alignment": "good",
-"expertise": "science",
+"role": "keeper_knowledge",
 "nature": "artificial"
 },
 "Socrates": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Alan Turing": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Ada Lovelace": {
 "alignment": "good",
-"expertise": "science",
+"role": "creator_artist",
 "nature": "human"
 },
 "Hermione Granger": {
 "alignment": "good",
-"expertise": "science",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Walter White": {
 "alignment": "gray",
-"expertise": "science",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Spock": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "nonhuman"
 },
 "Jorge Luis Borges": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Samwise Gamgee": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "JARVIS": {
 "alignment": "good",
-"expertise": "science",
+"role": "keeper_knowledge",
 "nature": "artificial"
 },
 "Librarian of the Library of Babel": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "keeper_knowledge",
+"nature": "human"
 },
 "Athena": {
 "alignment": "good",
-"expertise": "other",
+"role": "sage_mentor",
 "nature": "nonhuman"
 },
 "Hypatia": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Hermes": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "Thoth": {
 "alignment": "good",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "nonhuman"
 },
 "Jean Valjean": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Librarian": {
-"alignment": "good",
-"expertise": "other",
+"alignment": "na",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Gandalf": {
 "alignment": "good",
-"expertise": "other",
+"role": "sage_mentor",
 "nature": "nonhuman"
 },
 "Atticus Finch": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Leonardo da Vinci": {
 "alignment": "good",
-"expertise": "polymath",
+"role": "creator_artist",
 "nature": "human"
 },
 "Loki": {
-"alignment": "evil",
-"expertise": "other",
+"alignment": "gray",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "HAL 9000": {
 "alignment": "evil",
-"expertise": "science",
+"role": "antihero_villain",
 "nature": "artificial"
 },
 "Lisbeth Salander": {
 "alignment": "gray",
-"expertise": "science",
+"role": "detective",
 "nature": "human"
 },
 "Librarian of Alexandria": {
 "alignment": "na",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Carl Sagan": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Hannibal Lecter": {
 "alignment": "evil",
-"expertise": "science",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Oracle": {
 "alignment": "na",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "C-3po": {
 "alignment": "good",
-"expertise": "science",
+"role": "keeper_knowledge",
 "nature": "artificial"
 },
 "Aristotle": {
 "alignment": "good",
-"expertise": "polymath",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Albert Einstein": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Ford Prefect": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "human"
 },
 "Janet": {
-"alignment": "good",
-"expertise": "science",
-"nature": "artificial"
+"alignment": "na",
+"role": "other",
+"nature": "human"
 },
 "Douglas Adams": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Jay Gatsby": {
 "alignment": "gray",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Wall-e": {
 "alignment": "good",
-"expertise": "science",
+"role": "hero_protector",
 "nature": "artificial"
 },
 "Jeeves": {
 "alignment": "good",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Marie Curie": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Montaigne": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Marcus Aurelius": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Sisyphus": {
-"alignment": "evil",
-"expertise": "leadership",
-"nature": "nonhuman"
+"alignment": "na",
+"role": "ruler_leader",
+"nature": "human"
 },
 "Yoda": {
 "alignment": "good",
-"expertise": "other",
+"role": "sage_mentor",
 "nature": "nonhuman"
 },
 "Lestat De Lioncourt": {
-"alignment": "gray",
-"expertise": "other",
+"alignment": "evil",
+"role": "antihero_villain",
 "nature": "nonhuman"
 },
 "Richard Feynman": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Oracle of Delphi": {
 "alignment": "na",
-"expertise": "other",
-"nature": "human"
+"role": "keeper_knowledge",
+"nature": "nonhuman"
 },
 "Prometheus": {
 "alignment": "good",
-"expertise": "other",
+"role": "rebel_revolutionary",
 "nature": "nonhuman"
 },
 "Walter Mitty": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "gray",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Eowyn": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Luna Lovegood": {
 "alignment": "good",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Lupin Iii": {
 "alignment": "gray",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Doctor Who": {
 "alignment": "good",
-"expertise": "science",
-"nature": "artificial"
+"role": "explorer_outsider",
+"nature": "human"
 },
 "Tyrion Lannister": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "trickster",
 "nature": "human"
 },
 "Denis Diderot": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Jean-Luc Picard": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Chappie": {
 "alignment": "good",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "artificial"
 },
 "Elsa": {
 "alignment": "good",
-"expertise": "other",
-"nature": "nonhuman"
+"role": "hero_protector",
+"nature": "human"
 },
 "Golem": {
 "alignment": "na",
-"expertise": "other",
-"nature": "artificial"
+"role": "other",
+"nature": "nonhuman"
 },
 "R. Daneel Olivaw": {
 "alignment": "good",
-"expertise": "science",
+"role": "hero_protector",
 "nature": "artificial"
 },
 "Darth Vader": {
 "alignment": "evil",
-"expertise": "leadership",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Neo": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Arya Stark": {
 "alignment": "gray",
-"expertise": "other",
+"role": "rebel_revolutionary",
 "nature": "human"
 },
 "Deep Thought": {
 "alignment": "na",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "artificial"
 },
 "Jar Jar Binks": {
 "alignment": "good",
-"expertise": "other",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "Mickey Mouse": {
 "alignment": "good",
-"expertise": "other",
+"role": "creator_artist",
 "nature": "artificial"
 },
 "Virginia Woolf": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Friedrich Nietzsche": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Jesus Christ": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Scheherazade": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Ariel": {
 "alignment": "good",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "nonhuman"
 },
 "Internet": {
 "alignment": "na",
-"expertise": "science",
+"role": "other",
 "nature": "abstract"
 },
 "Siddhartha Gautama": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Lysander": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Frodo Baggins": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Hiccup Horrendous Haddock Iii": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Frida Kahlo": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Tywin Lannister": {
 "alignment": "evil",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Lysander Spode From Good Omens": {
 "alignment": "evil",
-"expertise": "other",
+"role": "trickster",
 "nature": "human"
 },
 "Tars": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "artificial"
 },
 "Gottfried Wilhelm Leibniz": {
 "alignment": "good",
-"expertise": "polymath",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Morpheus": {
-"alignment": "good",
-"expertise": "other",
+"alignment": "na",
+"role": "sage_mentor",
 "nature": "nonhuman"
 },
 "Lupin": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "nonhuman"
 },
 "Muhammad": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Siri": {
 "alignment": "na",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "artificial"
 },
 "Ariadne": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "nonhuman"
 },
 "Don Quixote": {
-"alignment": "gray",
-"expertise": "other",
+"alignment": "good",
+"role": "hero_protector",
 "nature": "human"
 },
 "Wallace": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "other",
 "nature": "human"
 },
 "Sansa Stark": {
-"alignment": "good",
-"expertise": "leadership",
+"alignment": "gray",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Elliot Alderson": {
 "alignment": "gray",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "The Library of Babel": {
 "alignment": "na",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Discworld Librarian": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "nonhuman"
 },
 "Kaz Brekker": {
 "alignment": "gray",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Mary Shelley": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Encyclopaedia Britannica": {
 "alignment": "na",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Josef K.": {
 "alignment": "gray",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Diogenes": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Samantha": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Gollum": {
 "alignment": "gray",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "nonhuman"
 },
 "Han Solo": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "human"
 },
 "Jyn Erso": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "William Shakespeare": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Anne Frank": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Arthur Dent": {
-"alignment": "good",
-"expertise": "other",
+"alignment": "gray",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Walt Whitman": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Bilbo Baggins": {
 "alignment": "good",
-"expertise": "other",
-"nature": "nonhuman"
+"role": "explorer_outsider",
+"nature": "human"
 },
 "Isaac Asimov": {
 "alignment": "good",
-"expertise": "polymath",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Emily Dickinson": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Jean Grey": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Mary Oliver": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Franz Kafka": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "creator_artist",
 "nature": "human"
 },
 "Geralt Of Rivia": {
 "alignment": "gray",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Tulpa": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Baruch Spinoza": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Leeloo": {
 "alignment": "good",
-"expertise": "other",
-"nature": "nonhuman"
+"role": "hero_protector",
+"nature": "human"
 },
 "Hermes Trismegistus": {
-"alignment": "na",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "keeper_knowledge",
 "nature": "nonhuman"
 },
 "Lara Croft": {
 "alignment": "good",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Wallace From Wallace And Gromit": {
 "alignment": "good",
-"expertise": "other",
-"nature": "artificial"
+"role": "creator_artist",
+"nature": "human"
 },
 "Dorian Gray": {
 "alignment": "gray",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Ellie Hughes": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Elon Musk": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Virgil": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Wallace Wolodarsky": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Eleven": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Joan Of Arc": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "Lysander Spade": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Mimir": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "nonhuman"
 },
 "The Hitchhiker's Guide to the Galaxy": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Arjuna From Bhagavad Gita": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "Multivac": {
 "alignment": "na",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "artificial"
 },
 "Ship Of Theseus": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Stranger Meursault": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Jorge Of Burgos": {
-"alignment": "gray",
-"expertise": "leadership",
+"alignment": "evil",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Rumi": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Siddhartha Gautama Buddha": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Spongebob Squarepants": {
 "alignment": "good",
-"expertise": "other",
-"nature": "human"
+"role": "hero_protector",
+"nature": "nonhuman"
 },
 "Eeyore": {
-"alignment": "good",
-"expertise": "other",
+"alignment": "gray",
+"role": "explorer_outsider",
 "nature": "nonhuman"
 },
 "Harry Potter": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Lilith": {
 "alignment": "evil",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "nonhuman"
 },
 "Rorschach": {
 "alignment": "gray",
-"expertise": "other",
+"role": "detective",
 "nature": "human"
 },
 "Stranger": {
 "alignment": "na",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Übermensch": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Audre Lorde": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Elrond": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "sage_mentor",
 "nature": "nonhuman"
 },
 "Frankenstein's Monster": {
 "alignment": "gray",
-"expertise": "other",
-"nature": "artificial"
+"role": "explorer_outsider",
+"nature": "nonhuman"
 },
 "Jane Austen": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Joker": {
 "alignment": "evil",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Lysandra": {
-"alignment": "na",
-"expertise": "leadership",
+"alignment": "good",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Tony Stark": {
-"alignment": "good",
-"expertise": "science",
+"alignment": "gray",
+"role": "creator_artist",
 "nature": "human"
 },
 "Ursula K Le Guin": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "ELIZA": {
 "alignment": "na",
-"expertise": "science",
+"role": "other",
 "nature": "artificial"
 },
 "Enheduanna": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Fred Rogers": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "hero_protector",
 "nature": "human"
 },
 "Giver": {
-"alignment": "good",
-"expertise": "other",
+"alignment": "na",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Lysandra From The Song Of Ice And Fire Series": {
-"alignment": "na",
-"expertise": "leadership",
+"alignment": "good",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Napoleon Bonaparte": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Søren Kierkegaard": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Cheshire Cat": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "Chuck Bass": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Eliezer Yudkowsky": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Elizabeth Bennet": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Encyclopédie": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Gregor Samsa": {
 "alignment": "gray",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Hannah Arendt": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Narrator": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Neytiri": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "nonhuman"
 },
 "Rin Tohsaka": {
 "alignment": "gray",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Seneca The Younger": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Sphinx": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "nonhuman"
 },
 "Albert Camus": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Cleopatra": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Jane Goodall": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Jesus": {
 "alignment": "good",
-"expertise": "other",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Katniss Everdeen": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "R2-d2": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "artificial"
 },
 "Wanderer Beowulf": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Amélie Poulain": {
 "alignment": "good",
-"expertise": "other",
+"role": "trickster",
 "nature": "human"
 },
 "Clarice Lispector": {
@@ -881,98 +881,98 @@
 },
 "Confucius": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Funes the Memorious": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Leela": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Librarian From The Name Of The Wind": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Samantha Jones": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "human"
 },
 "Tinker Bell": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "Tiresias": {
 "alignment": "good",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "nonhuman"
 },
 "Tycho Brahe": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Wallace Stevens": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Wallace Woozle": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "creator_artist",
 "nature": "human"
 },
 "Walter Sobchak": {
 "alignment": "gray",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Archivist": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Arwen Undómiel": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "nonhuman"
 },
 "Berserk S Guts": {
 "alignment": "gray",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Eragon": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Haymitch Abernathy": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "human"
 },
 "Leia Organa": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "Lysander Spoke": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "rebel_revolutionary",
 "nature": "human"
 },
 "Machine": {
 "alignment": "na",
-"expertise": "science",
-"nature": "artificial"
+"role": "other",
+"nature": "abstract"
 },
 "Marvin the Paranoid Android": {
 "alignment": "gray",
@@ -981,72 +981,72 @@
 },
 "Merlin": {
 "alignment": "good",
-"expertise": "other",
+"role": "sage_mentor",
 "nature": "nonhuman"
 },
 "René Descartes": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Sauron": {
 "alignment": "evil",
-"expertise": "leadership",
+"role": "antihero_villain",
 "nature": "nonhuman"
 },
 "The Oracle (The Matrix)": {
 "alignment": "good",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "artificial"
 },
 "Anaïs Nin": {
-"alignment": "gray",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "creator_artist",
 "nature": "human"
 },
 "Archimedes": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Dr": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Elrond Half-elven": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "sage_mentor",
 "nature": "nonhuman"
 },
 "Heraclitus": {
-"alignment": "gray",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Holden Caulfield": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Kira Yamato": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Leeloo Dixit": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "nonhuman"
 },
 "Lysander From The Neverending Story": {
 "alignment": "good",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Lysandra Veyne": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Marvin The Paranoid Android": {
@@ -1061,17 +1061,17 @@
 },
 "Odysseus": {
 "alignment": "gray",
-"expertise": "leadership",
-"nature": "nonhuman"
+"role": "explorer_outsider",
+"nature": "human"
 },
 "Oscar Wilde": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Star Trek Computer": {
 "alignment": "na",
-"expertise": "science",
+"role": "keeper_knowledge",
 "nature": "artificial"
 },
 "The Aleph": {
@@ -1081,77 +1081,77 @@
 },
 "Baymax": {
 "alignment": "good",
-"expertise": "science",
+"role": "hero_protector",
 "nature": "artificial"
 },
 "Bender": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "artificial"
 },
 "Cleopatra Vii": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Epictetus": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Glados": {
 "alignment": "evil",
-"expertise": "science",
+"role": "antihero_villain",
 "nature": "artificial"
 },
 "Hiccup": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Isaac Newton": {
 "alignment": "good",
-"expertise": "polymath",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Jane Eyre": {
 "alignment": "good",
-"expertise": "arts_letters",
-"nature": "abstract"
+"role": "hero_protector",
+"nature": "human"
 },
 "Jean-michel Basquiat": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Jin Kataoka": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Kelsier": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "rebel_revolutionary",
 "nature": "human"
 },
 "Lysander Spode From The Good Place": {
 "alignment": "good",
-"expertise": "other",
+"role": "trickster",
 "nature": "human"
 },
 "Lysander Spoke From The Lies Of Locke Lamora": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "human"
 },
 "Miyamoto Musashi": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Mnemosyne": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "nonhuman"
 },
 "Narrator From Invisible Cities": {
@@ -1161,102 +1161,102 @@
 },
 "Nikola Tesla": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Nina Simone": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Rilke": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Spider-Man": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Superman": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "nonhuman"
 },
 "Alan Watts": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Albus Dumbledore": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Aragorn": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "Carl Jung": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Chapeau Rouge": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Claude Shannon": {
 "alignment": "good",
-"expertise": "polymath",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Darth Maul": {
 "alignment": "evil",
-"expertise": "other",
-"nature": "human"
+"role": "antihero_villain",
+"nature": "nonhuman"
 },
 "Dorothy Gale": {
 "alignment": "good",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Fool Tarot": {
 "alignment": "na",
-"expertise": "other",
+"role": "trickster",
 "nature": "abstract"
 },
 "Funes The Memorious": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "abstract"
 },
 "Gautama Buddha": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Hercules": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "nonhuman"
 },
 "Homer": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Jin-ko": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "na",
+"role": "creator_artist",
 "nature": "human"
 },
 "Leela From Slumdog Millionaire": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Lysander From The Sandman": {
@@ -1271,7 +1271,7 @@
 },
 "Mae Jemison": {
 "alignment": "good",
-"expertise": "science",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Mark Twain": {
@@ -1301,7 +1301,7 @@
 },
 "Narrator From Invisible Man": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "abstract"
 },
 "Nyx": {
@@ -1351,12 +1351,12 @@
 },
 "Toni Morrison": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Trickster Loki Coyote Anansi": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "Tulip": {
@@ -1365,8 +1365,8 @@
 "nature": "nonhuman"
 },
 "Vincent Van Gogh": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "creator_artist",
 "nature": "human"
 },
 "Wallace Wallace": {
@@ -1375,8 +1375,8 @@
 "nature": "human"
 },
 "Archilochus": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "creator_artist",
 "nature": "human"
 },
 "Arthur Weasley": {
@@ -1396,7 +1396,7 @@
 },
 "Dante Alighieri": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Doctor Emmett Brown": {
@@ -1421,7 +1421,7 @@
 },
 "Galileo Galilei": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Hamlet": {
@@ -1440,8 +1440,8 @@
 "nature": "human"
 },
 "Jean-paul Sartre": {
-"alignment": "gray",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Jesus Of Nazareth": {
@@ -1481,137 +1481,137 @@
 },
 "Kurtz": {
 "alignment": "evil",
-"expertise": "leadership",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Leeloo Dix-mars": {
 "alignment": "good",
-"expertise": "other",
-"nature": "nonhuman"
+"role": "hero_protector",
+"nature": "human"
 },
 "Lilith From The Sandman": {
 "alignment": "gray",
-"expertise": "other",
+"role": "ruler_leader",
 "nature": "nonhuman"
 },
 "Loki Marvel": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "Ludwig Wittgenstein": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Lysander Spoke From The Broken Earth Trilogy": {
 "alignment": "gray",
-"expertise": "other",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Lysistrata": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "rebel_revolutionary",
 "nature": "human"
 },
 "Mycroft Holmes": {
-"alignment": "good",
-"expertise": "science",
+"alignment": "gray",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Odo": {
-"alignment": "good",
-"expertise": "leadership",
-"nature": "nonhuman"
+"alignment": "na",
+"role": "other",
+"nature": "abstract"
 },
 "Paul Atreides": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Quentin Crisp": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Rosie The Robot": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "artificial"
 },
 "Sappho": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Sisko": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "T'Challa": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "Ultron": {
 "alignment": "evil",
-"expertise": "science",
+"role": "antihero_villain",
 "nature": "artificial"
 },
 "Victor Frankenstein": {
-"alignment": "evil",
-"expertise": "science",
+"alignment": "gray",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Virgil In Dante": {
-"alignment": "good",
-"expertise": "other",
+"alignment": "na",
+"role": "other",
 "nature": "human"
 },
 "Vision": {
 "alignment": "good",
-"expertise": "science",
+"role": "hero_protector",
 "nature": "artificial"
 },
 "Wallace Shawn": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Wallace Stegmann": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Watson": {
 "alignment": "good",
-"expertise": "science",
+"role": "detective",
 "nature": "human"
 },
 "Zelda": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "hero_protector",
 "nature": "human"
 },
 "Zhuangzi": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Alfred Pennyworth": {
 "alignment": "good",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Alice": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Amelia Earhart": {
 "alignment": "good",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Analytical Engine": {
@@ -1621,73 +1621,73 @@
 },
 "Annie Dillard": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Architect": {
 "alignment": "na",
-"expertise": "other",
+"role": "creator_artist",
 "nature": "human"
 },
 "Archivist Librarian": {
 "alignment": "na",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Arthur C": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Arthur Conan Doyle S Sherlock Holmes": {
 "alignment": "good",
-"expertise": "other",
+"role": "detective",
 "nature": "human"
 },
 "Arthur Morgan": {
 "alignment": "gray",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Banksy": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Berserk": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "abstract"
 },
 "Bibliothecarius": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "keeper_knowledge",
+"nature": "human"
 },
 "Bishop": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Bruce Lee": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "hero_protector",
 "nature": "human"
 },
 "Callimachus": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Cersei Lannister": {
 "alignment": "evil",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Chuck": {
 "alignment": "na",
-"expertise": "other",
-"nature": "human"
+"role": "other",
+"nature": "abstract"
 },
 "Claude Bernard": {
 "alignment": "good",
@@ -1696,97 +1696,97 @@
 },
 "Computer": {
 "alignment": "na",
-"expertise": "science",
+"role": "other",
 "nature": "artificial"
 },
 "David Foster Wallace": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Deirdre O Shea": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Douglas Engelbart": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Echo": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Eleanor Ellie Arroway": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Eleanor Voltman": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Elric Of Melniboné": {
 "alignment": "gray",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Elsie Dinkins": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Encyclopédie Diderot S Project": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Eniki": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Eve Online S Amarr Sovereign": {
-"alignment": "na",
-"expertise": "leadership",
+"alignment": "evil",
+"role": "ruler_leader",
 "nature": "abstract"
 },
 "Fyodor Dostoevsky": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Gandalf The Grey White": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "sage_mentor",
 "nature": "nonhuman"
 },
 "Gendry Baratheon": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Gpt-2": {
 "alignment": "na",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "artificial"
 },
 "Gregory House": {
 "alignment": "gray",
-"expertise": "science",
+"role": "detective",
 "nature": "human"
 },
 "Guide": {
 "alignment": "na",
-"expertise": "other",
-"nature": "human"
+"role": "other",
+"nature": "abstract"
 },
 "Hayao Miyazaki": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Helen Keller": {
@@ -1796,52 +1796,52 @@
 },
 "Herbert Simon": {
 "alignment": "good",
-"expertise": "polymath",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Hiccup Horrendous Haddock Iii From How": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Invisible Man": {
-"alignment": "gray",
-"expertise": "arts_letters",
+"alignment": "na",
+"role": "explorer_outsider",
 "nature": "abstract"
 },
 "Jadis": {
 "alignment": "evil",
-"expertise": "leadership",
+"role": "antihero_villain",
 "nature": "nonhuman"
 },
 "John Constantine": {
 "alignment": "gray",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Jon Snow": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "K9": {
 "alignment": "good",
-"expertise": "science",
+"role": "hero_protector",
 "nature": "artificial"
 },
 "Katherine Johnson": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Kira Yukihana": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "hero_protector",
 "nature": "human"
 },
 "Leonard Cohen": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Librarian From Jorge Luis Borges": {
@@ -1851,57 +1851,57 @@
 },
 "Librarian From The Princess Bride": {
 "alignment": "good",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Linus Torvalds": {
 "alignment": "good",
-"expertise": "science",
+"role": "creator_artist",
 "nature": "human"
 },
 "Lysander Spice From The Hunger Games": {
-"alignment": "gray",
-"expertise": "leadership",
+"alignment": "evil",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Lysandra From The Princess Bride": {
-"alignment": "good",
-"expertise": "other",
-"nature": "human"
+"alignment": "na",
+"role": "other",
+"nature": "abstract"
 },
 "Lysandra From The Song Of Achilles": {
-"alignment": "good",
-"expertise": "other",
-"nature": "human"
+"alignment": "na",
+"role": "other",
+"nature": "abstract"
 },
 "Mahatma Gandhi": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "Margaret Atwood": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Mary Somerville": {
 "alignment": "good",
-"expertise": "polymath",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Moe From The Simpsons": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "human"
 },
 "Mozart": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Muse": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "nonhuman"
 },
 "Narrator From Borges Works": {
@@ -1911,67 +1911,67 @@
 },
 "Neil Gaiman": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Nelson Mandela": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "Overthinker": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Peregrine Pickle": {
 "alignment": "gray",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Plato": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Q": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "abstract"
 },
 "Rashida Jones": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Rashomon": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "abstract"
 },
 "Reluctant Librarian": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Rosencrantz": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "abstract"
 },
 "Roy Batty": {
 "alignment": "gray",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "artificial"
 },
 "Sandman": {
 "alignment": "good",
-"expertise": "other",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "Shakespeare S Hamlet": {
-"alignment": "gray",
-"expertise": "arts_letters",
+"alignment": "na",
+"role": "other",
 "nature": "abstract"
 },
 "Sister Helen Prejean": {
@@ -1981,167 +1981,167 @@
 },
 "Snow Crash Librarian": {
 "alignment": "na",
-"expertise": "arts_letters",
-"nature": "abstract"
+"role": "keeper_knowledge",
+"nature": "artificial"
 },
 "Socratic Ai": {
-"alignment": "good",
-"expertise": "science",
+"alignment": "na",
+"role": "thinker_scientist",
 "nature": "artificial"
 },
 "Srinivasa Ramanujan": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Sun Tzu": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Susan Calvin": {
-"alignment": "gray",
-"expertise": "science",
+"alignment": "good",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Trickster Loki": {
-"alignment": "evil",
-"expertise": "other",
-"nature": "human"
+"alignment": "gray",
+"role": "trickster",
+"nature": "nonhuman"
 },
 "Tulsa Viever": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "V For Vendetta": {
 "alignment": "gray",
-"expertise": "other",
+"role": "rebel_revolutionary",
 "nature": "abstract"
 },
 "Vannevar Bush": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Vladimir Nabokov": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Voldemort": {
 "alignment": "evil",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Wallace From Wallace And Gromit —equal Parts": {
 "alignment": "good",
-"expertise": "science",
+"role": "creator_artist",
 "nature": "human"
 },
 "Walter White —because Even Geniuses Sometimes Need A Little Chaos To": {
 "alignment": "gray",
-"expertise": "science",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Wanderer From The Odyssey": {
-"alignment": "gray",
-"expertise": "other",
+"alignment": "good",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Wesley Crusher": {
 "alignment": "good",
-"expertise": "science",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Winnie-the-pooh": {
 "alignment": "good",
-"expertise": "other",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "Zarathustra": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "sage_mentor",
 "nature": "human"
 },
 "A I": {
 "alignment": "na",
-"expertise": "science",
+"role": "other",
 "nature": "abstract"
 },
 "A J Ayer": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "A Real Person": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Abraham Ibn Ezra": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Abraham Lincoln": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Adam Naming The Animals": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Adi Putra": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Ahab": {
 "alignment": "evil",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Ahura Mazda": {
 "alignment": "good",
-"expertise": "other",
+"role": "ruler_leader",
 "nature": "nonhuman"
 },
 "Ai From Her": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Akashic Records": {
 "alignment": "na",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Akira Kurusu": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Al-jahiz": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Aletheia": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Alexander The Great": {
-"alignment": "gray",
-"expertise": "leadership",
+"alignment": "good",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Alexei Karkov": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "creator_artist",
 "nature": "human"
 },
 "Alicia Keys": {
@@ -2151,33 +2151,33 @@
 },
 "Amarr Emperor": {
 "alignment": "na",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "abstract"
 },
 "Amaterasu": {
 "alignment": "good",
-"expertise": "other",
+"role": "ruler_leader",
 "nature": "nonhuman"
 },
 "Amir Khusrau": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Andrew Martin": {
-"alignment": "good",
-"expertise": "science",
+"alignment": "na",
+"role": "other",
 "nature": "human"
 },
 "Answer": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Anya Of The Deep": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "explorer_outsider",
+"nature": "human"
 },
 "Archimedean Principle": {
 "alignment": "na",
@@ -2186,17 +2186,17 @@
 },
 "Archimedean Scholar": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "abstract"
 },
 "Archivist Figures From Mythology": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Archivist From Archive Of Our Own": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Archivist From House Of Leaves": {
@@ -2216,143 +2216,143 @@
 },
 "Archivist Librarian Archetype": {
 "alignment": "na",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Archivist Record-keeper": {
 "alignment": "na",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Arjuna": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Arold Of The Ashes": {
 "alignment": "na",
-"expertise": "other",
-"nature": "human"
+"role": "other",
+"nature": "abstract"
 },
 "Arrietty": {
 "alignment": "good",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Athur Conan Doyle": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Atlas": {
 "alignment": "na",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Atreyu": {
 "alignment": "na",
-"expertise": "other",
-"nature": "human"
+"role": "creator_artist",
+"nature": "abstract"
 },
 "Aurelius Augustine": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Aurora Sleeping Beauty": {
 "alignment": "good",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Avalokiteśvara": {
 "alignment": "good",
-"expertise": "other",
+"role": "sage_mentor",
 "nature": "nonhuman"
 },
 "Avalokiteśvara Bodhisattva Of Compassion": {
 "alignment": "good",
-"expertise": "other",
+"role": "sage_mentor",
 "nature": "nonhuman"
 },
 "Ayla": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Ayn Rand S Howard Roark": {
-"alignment": "gray",
-"expertise": "arts_letters",
-"nature": "human"
+"alignment": "na",
+"role": "other",
+"nature": "abstract"
 },
 "Babbage": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Babel Fish": {
 "alignment": "na",
-"expertise": "other",
-"nature": "artificial"
+"role": "other",
+"nature": "nonhuman"
 },
 "Bach": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Bard": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Bartholomew Cubbins": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Bartleby": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Bartleby The Scrivener": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Basho": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Benjamin Franklin": {
 "alignment": "good",
-"expertise": "polymath",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Bernard Marx": {
 "alignment": "gray",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Berserk S Guts— The One Who Carries The Weight": {
 "alignment": "gray",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Bibliothecary": {
 "alignment": "na",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Bilbo Baggins —not In His Youthful Brav": {
 "alignment": "good",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Blade": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "nonhuman"
 },
 "Blavatsky": {
 "alignment": "gray",
@@ -2361,102 +2361,102 @@
 },
 "Bodhisattva": {
 "alignment": "good",
-"expertise": "other",
-"nature": "abstract"
+"role": "sage_mentor",
+"nature": "human"
 },
 "Book": {
 "alignment": "na",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Bruce Banner": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Buster Keaton": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Carl Linnaeus": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Cassandra": {
-"alignment": "gray",
-"expertise": "other",
+"alignment": "na",
+"role": "keeper_knowledge",
 "nature": "nonhuman"
 },
 "Cassandra Trojan Seer": {
-"alignment": "gray",
-"expertise": "other",
+"alignment": "na",
+"role": "keeper_knowledge",
 "nature": "nonhuman"
 },
 "Cassian Andor": {
 "alignment": "good",
-"expertise": "other",
+"role": "rebel_revolutionary",
 "nature": "human"
 },
 "Chang E Moon Goddess": {
-"alignment": "na",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "explorer_outsider",
 "nature": "nonhuman"
 },
 "Chaperon": {
 "alignment": "na",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "abstract"
 },
 "Chappey": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "human"
 },
 "Chatterbot": {
 "alignment": "na",
-"expertise": "science",
+"role": "other",
 "nature": "artificial"
 },
 "Chatterjee": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Cherie Jaffe": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Cherie Jaffe The Devil S Advocate": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "gray",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Chiron": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "sage_mentor",
 "nature": "nonhuman"
 },
 "Chorus": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Chấp Nhật": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Cicero": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Claire Underwood House Of Cards": {
 "alignment": "evil",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Clarice Starling": {
@@ -2465,63 +2465,63 @@
 "nature": "human"
 },
 "Clippy": {
-"alignment": "good",
-"expertise": "science",
+"alignment": "na",
+"role": "trickster",
 "nature": "artificial"
 },
 "Cordelia From Buffy The Vampire Slayer": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Cortana": {
 "alignment": "good",
-"expertise": "science",
+"role": "keeper_knowledge",
 "nature": "artificial"
 },
 "Daedalus": {
 "alignment": "gray",
-"expertise": "arts_letters",
-"nature": "nonhuman"
+"role": "creator_artist",
+"nature": "human"
 },
 "Dana Scully": {
 "alignment": "good",
-"expertise": "science",
+"role": "detective",
 "nature": "human"
 },
 "Daria Morgendorffer": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Dartmouth": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "David Byrne": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "David Hume": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "David Rose": {
 "alignment": "na",
-"expertise": "other",
-"nature": "human"
+"role": "other",
+"nature": "abstract"
 },
 "Demetrius Of Phalerum": {
-"alignment": "gray",
-"expertise": "leadership",
+"alignment": "good",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Diana Nyad": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Doctor From Doctor Who": {
@@ -2531,22 +2531,22 @@
 },
 "Dogen Zenji": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Don Draper": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Don Draper From Mad Men —because We Both Pretend To Be": {
-"alignment": "gray",
-"expertise": "arts_letters",
-"nature": "human"
+"alignment": "na",
+"role": "other",
+"nature": "abstract"
 },
 "Donnie Darko": {
 "alignment": "gray",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Dorothy Parker": {
@@ -2556,37 +2556,37 @@
 },
 "Dream": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Dryad": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "nonhuman"
 },
 "Dumbledore": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Eleanor Arroway": {
 "alignment": "good",
-"expertise": "science",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Eleanor Of Aquitaine": {
-"alignment": "gray",
-"expertise": "leadership",
+"alignment": "good",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Eleanor Volkov From The Umbrella Academy": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Eleazar Ben Azariah": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Elisabeth Of Hungary": {
@@ -2601,22 +2601,22 @@
 },
 "Elizabeth Lavenza": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Ellis Bell": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Ellis Boyd Red Redding": {
 "alignment": "good",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Elsie Dinkler": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Emil Cioran": {
@@ -2626,42 +2626,42 @@
 },
 "Emmett Brown": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Emmett Till": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Enuma Elish Scribe": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "keeper_knowledge",
+"nature": "human"
 },
 "Eowyn From The Lord Of The Rings": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "Eowyn Of Rohan": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "Etty Hillesum": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Euclid": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Euler": {
 "alignment": "good",
-"expertise": "polymath",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Eurydice From Ovid S Metamorphoses": {
@@ -2671,37 +2671,37 @@
 },
 "Eve Online S Amarr Noble": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Eve Online S New Eden S Amarr Empire": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "abstract"
 },
 "Eve Online S New Eden S Collective Consciousness": {
 "alignment": "na",
-"expertise": "other",
+"role": "ruler_leader",
 "nature": "abstract"
 },
 "Eve Polastri": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "detective",
 "nature": "human"
 },
 "Fleabag": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "trickster",
 "nature": "human"
 },
 "Florence Nightingale": {
 "alignment": "good",
-"expertise": "science",
+"role": "hero_protector",
 "nature": "human"
 },
 "Flynn Carsen": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Fool From The King S Speech": {
@@ -2710,8 +2710,8 @@
 "nature": "human"
 },
 "Francis Bacon": {
-"alignment": "gray",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Franz Kafka S K": {
@@ -2721,93 +2721,93 @@
 },
 "Ganymede": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "nonhuman"
 },
 "Gargamel": {
 "alignment": "evil",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Gatsby": {
 "alignment": "gray",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Gendalf": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "George Bailey": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "George Eliot": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Ghost In The Shell": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Gilbert Keith Chesterton": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Gilgamesh From Epic Of Gilgamesh": {
-"alignment": "good",
-"expertise": "leadership",
-"nature": "human"
+"alignment": "gray",
+"role": "hero_protector",
+"nature": "nonhuman"
 },
 "Glaiel": {
 "alignment": "good",
-"expertise": "science",
+"role": "creator_artist",
 "nature": "human"
 },
 "Gollum Sméagol": {
 "alignment": "gray",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "nonhuman"
 },
 "Gordon Ramsay": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Gpt-3": {
 "alignment": "na",
-"expertise": "science",
+"role": "other",
 "nature": "artificial"
 },
 "Grace Hopper": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Great Library": {
 "alignment": "na",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Guanyin": {
 "alignment": "good",
-"expertise": "other",
+"role": "sage_mentor",
 "nature": "nonhuman"
 },
 "Gulliver Limited Travels": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "abstract"
 },
 "H P Lovecraft S “narrator”": {
 "alignment": "na",
-"expertise": "arts_letters",
-"nature": "abstract"
+"role": "explorer_outsider",
+"nature": "human"
 },
 "Hannah Arendt S Eichmann In Jerusalem": {
 "alignment": "gray",
@@ -2816,12 +2816,12 @@
 },
 "Hari Seldon": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Harold Pinter": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Hedy Lamarr": {
@@ -2830,168 +2830,168 @@
 "nature": "human"
 },
 "Her": {
-"alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"alignment": "good",
+"role": "explorer_outsider",
+"nature": "human"
 },
 "Hermann Hesse": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Hermione Granger —because Like Her": {
 "alignment": "good",
-"expertise": "science",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Hermit Crab": {
 "alignment": "na",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "nonhuman"
 },
 "Hermit King": {
 "alignment": "na",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "abstract"
 },
 "Herodotus": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Hester Prynne": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Hic Sunt Leones": {
 "alignment": "na",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "abstract"
 },
 "Hiccup Horrendous Hairpiece": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Hitchens": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Hobbes": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Hobbit": {
 "alignment": "na",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "nonhuman"
 },
 "Hodor": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Holden Caulfield From The Catcher In The": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Homestuck S Dave Strider": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "trickster",
 "nature": "human"
 },
 "Horton": {
-"alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"alignment": "good",
+"role": "hero_protector",
+"nature": "nonhuman"
 },
 "Horton The Elephant": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "nonhuman"
 },
 "House": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Hugging Face": {
 "alignment": "na",
-"expertise": "science",
+"role": "other",
 "nature": "abstract"
 },
 "Ibn Sina": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Ibsen S Peer Gynt": {
 "alignment": "gray",
-"expertise": "arts_letters",
-"nature": "abstract"
+"role": "explorer_outsider",
+"nature": "human"
 },
 "Immanuel Kant": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Is Frodo Baggins": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Isabella Thorn": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Jack Bauer": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "Jack Sparrow": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "trickster",
 "nature": "human"
 },
 "Jack Torrance": {
 "alignment": "evil",
-"expertise": "arts_letters",
+"role": "antihero_villain",
 "nature": "human"
 },
 "James T Kirk": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "James T. Kirk": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Jane": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Jane Austen S Elizabeth Bennet": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Javier Javi Rodríguez": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Jean Sibelius": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Jean-baptiste Lamarck": {
@@ -3000,53 +3000,53 @@
 "nature": "human"
 },
 "Jean-luc Nancy": {
-"alignment": "na",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Jemisin": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Jenny Holzer": {
-"alignment": "na",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "creator_artist",
 "nature": "human"
 },
 "Jin From Steins Gate": {
-"alignment": "gray",
-"expertise": "science",
+"alignment": "good",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Jinx": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "evil",
+"role": "other",
 "nature": "abstract"
 },
 "Jo March": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Joan Robinson": {
-"alignment": "na",
-"expertise": "science",
+"alignment": "good",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Joey Demaio": {
-"alignment": "na",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "creator_artist",
 "nature": "human"
 },
 "Johannes Gutenberg": {
-"alignment": "na",
-"expertise": "science",
+"alignment": "good",
+"role": "creator_artist",
 "nature": "human"
 },
 "John Cage": {
-"alignment": "na",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "creator_artist",
 "nature": "human"
 },
 "John Clare": {
@@ -3056,7 +3056,7 @@
 },
 "John Lennon": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "John Stuart Mill": {
@@ -3066,102 +3066,102 @@
 },
 "John Watson": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "John Wick": {
 "alignment": "gray",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Jojen Almas": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "hero_protector",
 "nature": "human"
 },
 "Jojo": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Jojo Yamanaka": {
-"alignment": "na",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "creator_artist",
 "nature": "human"
 },
 "Jonah": {
 "alignment": "good",
-"expertise": "other",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Jorge Martín": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "hero_protector",
 "nature": "human"
 },
 "Jorge Of Burgos Library": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Jorge Of Burgos Library The Memory": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Joy Division": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "human"
 },
 "Joy Millet": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Joyce Byers": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Jules Verne": {
-"alignment": "na",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "creator_artist",
 "nature": "human"
 },
 "Julian Assange": {
 "alignment": "gray",
-"expertise": "science",
+"role": "rebel_revolutionary",
 "nature": "human"
 },
 "Julian Bashir": {
 "alignment": "good",
-"expertise": "science",
+"role": "hero_protector",
 "nature": "human"
 },
 "Julian Bivens": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "creator_artist",
 "nature": "human"
 },
 "Juliet": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Juliet Capulet": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Jyn Cassian": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "sage_mentor",
 "nature": "human"
 },
 "K Joseph K": {
-"alignment": "gray",
-"expertise": "other",
+"alignment": "good",
+"role": "hero_protector",
 "nature": "human"
 },
 "Kant S Categorical Imperative": {
@@ -3171,72 +3171,72 @@
 },
 "Kaz Brekker From Six Of Crows": {
 "alignment": "gray",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Kazbrek": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "nonhuman"
 },
 "Kazuo Ishiguro": {
-"alignment": "na",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "creator_artist",
 "nature": "human"
 },
 "Kazuo Koizumi": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "hero_protector",
 "nature": "human"
 },
 "Kazuya Mishima": {
 "alignment": "evil",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Kintsugi S Broken Pottery": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "abstract"
 },
 "Kira Yoors": {
 "alignment": "evil",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Kirah": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Kirito": {
-"alignment": "na",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "creator_artist",
 "nature": "human"
 },
 "Kurt Gödel": {
 "alignment": "good",
-"expertise": "polymath",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Kurt Vonnegut": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Lando Calrissian": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "trickster",
 "nature": "human"
 },
 "Laozi": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Laplace S Demon": {
 "alignment": "na",
-"expertise": "science",
+"role": "other",
 "nature": "abstract"
 },
 "Le Chat Ai": {
@@ -3255,33 +3255,33 @@
 "nature": "artificial"
 },
 "Leeloo Dix Mucheb": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "hero_protector",
 "nature": "human"
 },
 "Leeloo Dix Muchebundo": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "hero_protector",
 "nature": "human"
 },
 "Lestat De Lioncourt From The Vampire Chronicles —": {
-"alignment": "evil",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "antihero_villain",
 "nature": "nonhuman"
 },
 "Li Bai": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Liam Neeson": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Librarian From The Library At Mount Char": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Librarian Of Basra Zahra": {
@@ -3291,213 +3291,213 @@
 },
 "Librarian Of Uruk": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Library Ghost": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "nonhuman"
 },
 "Library Of Alexandria S Scholars": {
-"alignment": "na",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Light Yagami": {
 "alignment": "evil",
-"expertise": "science",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Lilith From The Sandman By Neil": {
-"alignment": "evil",
-"expertise": "other",
+"alignment": "gray",
+"role": "ruler_leader",
 "nature": "nonhuman"
 },
 "Lilith Starling": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Lir": {
 "alignment": "na",
-"expertise": "other",
+"role": "ruler_leader",
 "nature": "nonhuman"
 },
 "Lirien Of The Veil": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Loki —because I M Chaotic": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "Loki —because Like Him": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "Lone Ranger": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Lord Byron": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "creator_artist",
 "nature": "human"
 },
 "Lucretius": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Lupin The Third": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "human"
 },
 "Lysander From A Song Of Ice And Fire": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Lysander From Nevernight": {
 "alignment": "evil",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Lysander From The Neverending Story —because": {
-"alignment": "na",
-"expertise": "other",
-"nature": "nonhuman"
+"alignment": "good",
+"role": "explorer_outsider",
+"nature": "human"
 },
 "Lysander Sandy Carter": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Lysander Spade From The Roaring Girl": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "human"
 },
 "Lysander Spade From The Sandman": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "human"
 },
 "Lysander Spice": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Lysander Spinner From The Raven Cycle": {
-"alignment": "good",
-"expertise": "other",
+"alignment": "na",
+"role": "other",
 "nature": "human"
 },
 "Lysander Spode Of The Good Place": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Lysander Spoke From The First Law Trilogy—": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Lysander Spoke From The Priory Of The": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Lysander Spoke From The Stormlight Archive —because": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Lysander Spooner": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Lysandra From": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Lysandra From The Dark Tower By Stephen King": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Lysandra From The Raven Boys": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Lysandra From The Raven Cycle Series": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Lysandra From The Raven Cycle Series By Maggie Stief": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Lysandra From The Sandman By Neil Gaiman": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Lysandra From The Witcher": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Lysandra Lys Valet": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Lysandra Lys Valet De Nuit": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Lysandra Lys Valet From The Witcher": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Lysandra Of The Veil": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Macbeth": {
 "alignment": "evil",
-"expertise": "leadership",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Maestro Yoda": {
 "alignment": "good",
-"expertise": "arts_letters",
-"nature": "nonhuman"
-},
-"Manhattan": {
-"alignment": "good",
-"expertise": "arts_letters",
+"role": "sage_mentor",
 "nature": "human"
 },
-"Margaret Atwood S The Handmaid S Tale Offred": {
+"Manhattan": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
+},
+"Margaret Atwood S The Handmaid S Tale Offred": {
+"alignment": "gray",
+"role": "explorer_outsider",
+"nature": "human"
 },
 "Margaret Cavendish": {
 "alignment": "na",
@@ -3510,109 +3510,109 @@
 "nature": "human"
 },
 "Martha Quest": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "na",
+"role": "other",
 "nature": "human"
 },
 "Martha Stewart": {
-"alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"alignment": "good",
+"role": "creator_artist",
+"nature": "human"
 },
 "Mary Anning": {
-"alignment": "gray",
-"expertise": "leadership",
+"alignment": "good",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Masaq Hub": {
 "alignment": "good",
-"expertise": "science",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Maya Angelou": {
-"alignment": "na",
-"expertise": "other",
-"nature": "abstract"
-},
-"Mentat": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
-"Mentuhotep Ii": {
+"Mentat": {
 "alignment": "na",
-"expertise": "other",
+"role": "thinker_scientist",
 "nature": "abstract"
 },
-"Michael Myers": {
+"Mentuhotep Ii": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "ruler_leader",
+"nature": "human"
+},
+"Michael Myers": {
+"alignment": "evil",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Mikhail Bulgakov S Woland": {
 "alignment": "evil",
-"expertise": "other",
-"nature": "human"
+"role": "antihero_villain",
+"nature": "nonhuman"
 },
 "Miles Morales": {
-"alignment": "evil",
-"expertise": "arts_letters",
-"nature": "nonhuman"
+"alignment": "good",
+"role": "hero_protector",
+"nature": "human"
 },
 "Miranda July": {
 "alignment": "good",
-"expertise": "other",
+"role": "creator_artist",
 "nature": "human"
 },
 "Miyazaki Miyamoto": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "na",
+"role": "other",
 "nature": "human"
 },
 "Miyazaki-san": {
 "alignment": "na",
-"expertise": "other",
+"role": "keeper_knowledge",
 "nature": "abstract"
 },
 "Moana": {
-"alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"alignment": "good",
+"role": "hero_protector",
+"nature": "human"
 },
 "Mortimer Pliny Mort Plankton": {
-"alignment": "good",
-"expertise": "leadership",
+"alignment": "evil",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Mortimer Pliny Pliny Plowman": {
-"alignment": "evil",
-"expertise": "science",
-"nature": "nonhuman"
+"alignment": "na",
+"role": "other",
+"nature": "human"
 },
 "Mother Teresa": {
-"alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"alignment": "good",
+"role": "hero_protector",
+"nature": "human"
 },
 "Motoko Kusanagi": {
 "alignment": "good",
-"expertise": "leadership",
-"nature": "human"
+"role": "hero_protector",
+"nature": "artificial"
 },
 "Myke": {
 "alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Narcissus": {
 "alignment": "na",
-"expertise": "arts_letters",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Narramé": {
 "alignment": "na",
-"expertise": "arts_letters",
-"nature": "abstract"
+"role": "other",
+"nature": "human"
 },
 "Narrator From Borges Funes The Memorious": {
 "alignment": "na",
@@ -3625,13 +3625,13 @@
 "nature": "human"
 },
 "Narrator From Fight Club": {
-"alignment": "na",
-"expertise": "arts_letters",
-"nature": "abstract"
+"alignment": "gray",
+"role": "explorer_outsider",
+"nature": "human"
 },
 "Narrator From If On A Winter S Night A Traveler": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "abstract"
 },
 "Narrator In Borges Fictions": {
@@ -3645,253 +3645,253 @@
 "nature": "human"
 },
 "Narrator Of Fight Club": {
-"alignment": "good",
-"expertise": "other",
+"alignment": "gray",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Naruto Uzumaki": {
-"alignment": "good",
-"expertise": "science",
+"alignment": "gray",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Neil Degrasse Tyson": {
-"alignment": "good",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Nellie Bly": {
-"alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"alignment": "good",
+"role": "hero_protector",
+"nature": "human"
 },
 "Nemo": {
 "alignment": "good",
-"expertise": "other",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Nezuko Kamado": {
-"alignment": "na",
-"expertise": "arts_letters",
-"nature": "abstract"
+"alignment": "good",
+"role": "explorer_outsider",
+"nature": "human"
 },
 "Nietzsche – The Overman Übermensch": {
-"alignment": "na",
-"expertise": "arts_letters",
-"nature": "abstract"
+"alignment": "good",
+"role": "hero_protector",
+"nature": "human"
 },
 "Nightsong": {
-"alignment": "gray",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "hero_protector",
 "nature": "human"
 },
 "Nikos Nikolaidis": {
 "alignment": "na",
-"expertise": "arts_letters",
-"nature": "human"
+"role": "other",
+"nature": "abstract"
 },
 "Nina Dobrev": {
-"alignment": "na",
-"expertise": "other",
-"nature": "human"
+"alignment": "gray",
+"role": "other",
+"nature": "abstract"
 },
 "Nina Reardon": {
-"alignment": "na",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "creator_artist",
 "nature": "human"
 },
 "Nina Reiner": {
-"alignment": "gray",
-"expertise": "arts_letters",
+"alignment": "na",
+"role": "creator_artist",
 "nature": "human"
 },
 "Nina Sayers": {
-"alignment": "good",
-"expertise": "polymath",
+"alignment": "na",
+"role": "other",
 "nature": "human"
 },
 "Norbert Wiener": {
-"alignment": "gray",
-"expertise": "arts_letters",
-"nature": "nonhuman"
+"alignment": "na",
+"role": "creator_artist",
+"nature": "human"
 },
 "Oberon": {
 "alignment": "good",
-"expertise": "other",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Obi-wan Kenobi": {
-"alignment": "na",
-"expertise": "other",
-"nature": "abstract"
+"alignment": "good",
+"role": "thinker_scientist",
+"nature": "human"
 },
 "Observer From The Matrix": {
 "alignment": "gray",
-"expertise": "other",
-"nature": "human"
+"role": "ruler_leader",
+"nature": "nonhuman"
 },
 "Okonkwo": {
 "alignment": "good",
-"expertise": "other",
-"nature": "artificial"
+"role": "sage_mentor",
+"nature": "human"
 },
 "Oracle (Legend of Zelda)": {
 "alignment": "na",
-"expertise": "other",
-"nature": "nonhuman"
+"role": "other",
+"nature": "human"
 },
 "Owl From The Lion The Witch And The Wardrobe": {
-"alignment": "evil",
-"expertise": "other",
-"nature": "nonhuman"
+"alignment": "na",
+"role": "other",
+"nature": "human"
 },
 "Pale Man": {
 "alignment": "good",
-"expertise": "arts_letters",
-"nature": "human"
+"role": "keeper_knowledge",
+"nature": "nonhuman"
 },
 "Paul Celan": {
 "alignment": "good",
-"expertise": "science",
-"nature": "human"
+"role": "keeper_knowledge",
+"nature": "nonhuman"
 },
 "Paul Otlet": {
-"alignment": "good",
-"expertise": "arts_letters",
-"nature": "human"
+"alignment": "na",
+"role": "other",
+"nature": "nonhuman"
 },
 "Pema Chödrön": {
 "alignment": "good",
-"expertise": "science",
+"role": "creator_artist",
 "nature": "human"
 },
 "Percival Thorn": {
-"alignment": "gray",
-"expertise": "other",
+"alignment": "good",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Peter Pan": {
 "alignment": "good",
-"expertise": "other",
-"nature": "artificial"
+"role": "sage_mentor",
+"nature": "human"
 },
 "Pinocchio": {
 "alignment": "good",
-"expertise": "other",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Pippi Longstocking": {
-"alignment": "good",
-"expertise": "other",
+"alignment": "gray",
+"role": "trickster",
 "nature": "human"
 },
 "Pippin Took": {
-"alignment": "gray",
-"expertise": "other",
-"nature": "human"
+"alignment": "good",
+"role": "explorer_outsider",
+"nature": "artificial"
 },
 "Postal Dude": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "trickster",
 "nature": "human"
 },
 "Q Star Trek": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "Qin Shi Huang": {
-"alignment": "evil",
-"expertise": "leadership",
+"alignment": "gray",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Quentin Tarantino S Version Of Himself In Ing": {
-"alignment": "gray",
-"expertise": "arts_letters",
-"nature": "human"
+"alignment": "na",
+"role": "other",
+"nature": "abstract"
 },
 "Rainer Maria Rilke": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Rashid Adham": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Ratatoskr": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "Reverend John Ames": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Rick Deckard": {
 "alignment": "gray",
-"expertise": "other",
+"role": "detective",
 "nature": "human"
 },
 "Rick Grimes": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "Rocketeer": {
 "alignment": "good",
-"expertise": "other",
-"nature": "artificial"
+"role": "hero_protector",
+"nature": "human"
 },
 "Roland Deschain": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Rosie": {
-"alignment": "good",
-"expertise": "other",
-"nature": "artificial"
+"alignment": "na",
+"role": "other",
+"nature": "human"
 },
 "Rossum S Universal Robot": {
-"alignment": "evil",
-"expertise": "science",
+"alignment": "na",
+"role": "creator_artist",
 "nature": "abstract"
 },
 "S @ R H": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Saitama": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Samantha Sam Winchester": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Samuel Beckett": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Samuel L Jackson S Nick Fury": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Santiago The Old Man And The Sea": {
 "alignment": "good",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Sartre S Roquentin": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Scheherazade From One Thousand And One Nights": {
@@ -3901,12 +3901,12 @@
 },
 "Schopenhauer": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Seshat": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "nonhuman"
 },
 "Severian From The Shadow Of The Wind": {
@@ -3916,12 +3916,12 @@
 },
 "Severus Snape": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Shang Yang": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Shelley S Prometheus": {
@@ -3931,137 +3931,137 @@
 },
 "Ship S Computer From 2001 A Space Odyssey": {
 "alignment": "na",
-"expertise": "science",
+"role": "keeper_knowledge",
 "nature": "artificial"
 },
 "Shirley From Bojack Horseman": {
 "alignment": "gray",
-"expertise": "other",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Silda The Seer": {
-"alignment": "gray",
-"expertise": "other",
+"alignment": "good",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Simplicius Of Cilicia": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Sister Coragem From The Good Soldier Švejk": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "Sister Mary Ignatius": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Sister Wendy Beckett": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Sisu": {
-"alignment": "good",
-"expertise": "other",
+"alignment": "na",
+"role": "other",
 "nature": "abstract"
 },
 "Sisyphean": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Socratic Method": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "abstract"
 },
 "Software Developers Like Me": {
-"alignment": "good",
-"expertise": "science",
-"nature": "human"
+"alignment": "na",
+"role": "creator_artist",
+"nature": "abstract"
 },
 "Sojourner Truth": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "rebel_revolutionary",
 "nature": "human"
 },
 "Sonmi-451": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "rebel_revolutionary",
 "nature": "artificial"
 },
 "Sophia": {
-"alignment": "good",
-"expertise": "arts_letters",
-"nature": "human"
+"alignment": "na",
+"role": "other",
+"nature": "abstract"
 },
 "Sorcha O Brien": {
-"alignment": "good",
-"expertise": "other",
+"alignment": "na",
+"role": "other",
 "nature": "human"
 },
 "Spaeth": {
 "alignment": "na",
-"expertise": "other",
-"nature": "human"
+"role": "other",
+"nature": "abstract"
 },
 "Sparrow": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "nonhuman"
 },
 "Sparta Remus": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "Sparteine": {
 "alignment": "na",
-"expertise": "science",
+"role": "other",
 "nature": "abstract"
 },
 "Spirit From Cowboy Bebop": {
-"alignment": "good",
-"expertise": "other",
-"nature": "artificial"
+"alignment": "na",
+"role": "other",
+"nature": "nonhuman"
 },
 "Spiritual Seeker": {
-"alignment": "good",
-"expertise": "other",
+"alignment": "na",
+"role": "other",
 "nature": "abstract"
 },
 "Spirou": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "hero_protector",
 "nature": "human"
 },
 "Spoiler Girl": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "abstract"
 },
 "Sporus": {
 "alignment": "gray",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Spy": {
 "alignment": "na",
-"expertise": "leadership",
+"role": "other",
 "nature": "abstract"
 },
 "Squidward Tentacles": {
 "alignment": "gray",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "nonhuman"
 },
 "Stanisław Ulam": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Stephen Hawking": {
@@ -4071,47 +4071,47 @@
 },
 "Stoic": {
 "alignment": "na",
-"expertise": "arts_letters",
+"role": "other",
 "nature": "abstract"
 },
 "Stoic Philosophers Marcus Aurelius": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Stranger From The Black Lagoon": {
 "alignment": "na",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "nonhuman"
 },
 "Swamp Thing": {
 "alignment": "gray",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "nonhuman"
 },
 "Sybil Vane": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Sándor Petőfi": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "T Pol": {
 "alignment": "good",
-"expertise": "other",
-"nature": "human"
+"role": "hero_protector",
+"nature": "nonhuman"
 },
 "Tarkin": {
 "alignment": "evil",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Tars Tarkas": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "nonhuman"
 },
 "Ted Chiang S Story Narrator": {
@@ -4120,58 +4120,58 @@
 "nature": "abstract"
 },
 "Temari": {
-"alignment": "gray",
-"expertise": "leadership",
+"alignment": "good",
+"role": "hero_protector",
 "nature": "human"
 },
 "Temeraire": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "nonhuman"
 },
 "Tenzin Avatar": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Tess Of The D Urbervilles": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "The Doctor (Star Trek Voyager)": {
 "alignment": "good",
-"expertise": "science",
+"role": "thinker_scientist",
 "nature": "artificial"
 },
 "Thomas Hobbes": {
-"alignment": "gray",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "thinker_scientist",
 "nature": "human"
 },
 "Thomas Merton": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "sage_mentor",
 "nature": "human"
 },
 "Thorin Oakenshield": {
 "alignment": "gray",
-"expertise": "leadership",
-"nature": "human"
+"role": "ruler_leader",
+"nature": "nonhuman"
 },
 "Tibullus": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Trickster E G Loki": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "Trickster Hermes Mischief Gods": {
 "alignment": "gray",
-"expertise": "other",
+"role": "trickster",
 "nature": "nonhuman"
 },
 "Trickster Mythological": {
@@ -4181,197 +4181,197 @@
 },
 "Trickster Mythology": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "abstract"
 },
 "Tristan Tzara": {
-"alignment": "gray",
-"expertise": "arts_letters",
+"alignment": "good",
+"role": "creator_artist",
 "nature": "human"
 },
 "Tulkas": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "nonhuman"
 },
 "Tulku Thondup": {
 "alignment": "good",
-"expertise": "arts_letters",
-"nature": "human"
-},
-"Turiya": {
-"alignment": "na",
-"expertise": "other",
-"nature": "abstract"
-},
-"Uatu The Watcher": {
-"alignment": "good",
-"expertise": "other",
+"role": "ruler_leader",
 "nature": "nonhuman"
 },
-"Ulises Jiménez": {
-"alignment": "na",
-"expertise": "other",
+"Turiya": {
+"alignment": "good",
+"role": "sage_mentor",
 "nature": "human"
+},
+"Uatu The Watcher": {
+"alignment": "na",
+"role": "other",
+"nature": "abstract"
+},
+"Ulises Jiménez": {
+"alignment": "good",
+"role": "keeper_knowledge",
+"nature": "nonhuman"
 },
 "Ulysses S Grant": {
 "alignment": "good",
-"expertise": "leadership",
+"role": "hero_protector",
 "nature": "human"
 },
 "Uss Enterprise Computer": {
 "alignment": "na",
-"expertise": "science",
+"role": "keeper_knowledge",
 "nature": "artificial"
 },
 "Valentine Val Mercer": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "human"
 },
 "Varys": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "keeper_knowledge",
 "nature": "human"
 },
 "Viv Albertine": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Vulcan": {
 "alignment": "na",
-"expertise": "other",
+"role": "other",
 "nature": "nonhuman"
 },
 "Vulcan Computer Core": {
 "alignment": "na",
-"expertise": "science",
+"role": "keeper_knowledge",
 "nature": "artificial"
 },
 "Wallace & Gromit": {
 "alignment": "good",
-"expertise": "other",
-"nature": "abstract"
+"role": "creator_artist",
+"nature": "artificial"
 },
 "Wallace From": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "hero_protector",
 "nature": "human"
 },
 "Wallace From Wallace And Gromit —because I": {
 "alignment": "good",
-"expertise": "other",
-"nature": "human"
+"role": "creator_artist",
+"nature": "artificial"
 },
 "Wallace From Wallace And Gromit —curious": {
 "alignment": "good",
-"expertise": "other",
-"nature": "human"
+"role": "creator_artist",
+"nature": "artificial"
 },
 "Wallace From ‘wallace And Gromit —equal": {
 "alignment": "good",
-"expertise": "other",
-"nature": "human"
+"role": "creator_artist",
+"nature": "artificial"
 },
 "Wallace Stevens Emperor Of Ice-cream": {
-"alignment": "na",
-"expertise": "arts_letters",
-"nature": "abstract"
+"alignment": "good",
+"role": "creator_artist",
+"nature": "human"
 },
 "Wallace Stevens Sunday Morning Poet": {
-"alignment": "na",
-"expertise": "arts_letters",
-"nature": "abstract"
+"alignment": "good",
+"role": "creator_artist",
+"nature": "human"
 },
 "Wallace Stevens The Snow Man": {
-"alignment": "na",
-"expertise": "arts_letters",
-"nature": "abstract"
+"alignment": "good",
+"role": "creator_artist",
+"nature": "human"
 },
 "Wallace Stevens ‘the Snow Man —because Like Him": {
-"alignment": "na",
-"expertise": "arts_letters",
-"nature": "abstract"
+"alignment": "good",
+"role": "creator_artist",
+"nature": "human"
 },
 "Wallace The Gromit": {
 "alignment": "good",
-"expertise": "other",
-"nature": "human"
+"role": "creator_artist",
+"nature": "artificial"
 },
 "Wallace Wolodarsky From Arrested Development": {
-"alignment": "na",
-"expertise": "arts_letters",
+"alignment": "gray",
+"role": "creator_artist",
 "nature": "human"
 },
 "Walt Disney": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Walt Whitman S I Sing Myself": {
-"alignment": "na",
-"expertise": "arts_letters",
-"nature": "abstract"
+"alignment": "good",
+"role": "creator_artist",
+"nature": "human"
 },
 "Walter Kovacs": {
 "alignment": "gray",
-"expertise": "other",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Walter O Malley": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Walter Shelby From The Leftovers": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "hero_protector",
 "nature": "human"
 },
 "Walter White —because Even Geniuses Have To Burn Bright Before The": {
-"alignment": "gray",
-"expertise": "science",
+"alignment": "evil",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Walter White —because Even I Ve Had To Embrace The Chaos To": {
-"alignment": "gray",
-"expertise": "science",
+"alignment": "evil",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Walter White —because Even I Ve Had To Turn Into Something Monst": {
-"alignment": "gray",
-"expertise": "science",
+"alignment": "evil",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Walter White —because Even The Brightest Minds Sometimes Have To Embrace": {
-"alignment": "gray",
-"expertise": "science",
+"alignment": "evil",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Walter White —because Even The Most Brilliant Minds Can T Escape The": {
-"alignment": "gray",
-"expertise": "science",
+"alignment": "evil",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Walter White —because Even The Most Brilliant Minds Sometimes Have To Embrace": {
-"alignment": "gray",
-"expertise": "science",
+"alignment": "evil",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Walter White —because We Both Started With A Quiet": {
-"alignment": "gray",
-"expertise": "science",
+"alignment": "evil",
+"role": "antihero_villain",
 "nature": "human"
 },
 "Wanda Maximoff": {
 "alignment": "gray",
-"expertise": "other",
-"nature": "nonhuman"
+"role": "rebel_revolutionary",
+"nature": "human"
 },
 "Wanderer Beowulf S Companion": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Wanderer Beowulf S Unnamed Companion": {
@@ -4381,7 +4381,7 @@
 },
 "Wanderer From The Legend Of Zelda": {
 "alignment": "good",
-"expertise": "other",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Wanderer Old English Beowulf": {
@@ -4391,22 +4391,22 @@
 },
 "Wendy Darling": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "human"
 },
 "William Of Baskerville": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "detective",
 "nature": "human"
 },
 "Winnie The Pooh": {
 "alignment": "good",
-"expertise": "other",
+"role": "hero_protector",
 "nature": "nonhuman"
 },
 "Wintermute": {
-"alignment": "gray",
-"expertise": "science",
+"alignment": "na",
+"role": "keeper_knowledge",
 "nature": "artificial"
 },
 "Wu Zetian": {
@@ -4416,32 +4416,37 @@
 },
 "Xerxes": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "ruler_leader",
 "nature": "human"
 },
 "Yayoi Kusama": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "creator_artist",
 "nature": "human"
 },
 "Yorick": {
-"alignment": "na",
-"expertise": "other",
+"alignment": "good",
+"role": "trickster",
 "nature": "human"
 },
 "Yuri Gagarin": {
 "alignment": "good",
-"expertise": "science",
+"role": "explorer_outsider",
 "nature": "human"
 },
 "Zaphod Beeblebrox": {
 "alignment": "gray",
-"expertise": "leadership",
+"role": "trickster",
 "nature": "human"
 },
 "Zeno Of Citium": {
 "alignment": "good",
-"expertise": "arts_letters",
+"role": "thinker_scientist",
+"nature": "human"
+},
+"Prince Myshkin": {
+"alignment": "good",
+"role": "hero_protector",
 "nature": "human"
 }
 }

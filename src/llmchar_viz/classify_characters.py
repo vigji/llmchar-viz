@@ -31,18 +31,31 @@ COST_CAP = 2.0
 OUT = PROJECT_ROOT / "data" / "char_specs.json"
 
 ALIGN = {"good", "gray", "evil", "na"}
-EXPERT = {"science", "arts_letters", "polymath", "leadership", "other"}
+ROLE = {"sage_mentor", "thinker_scientist", "creator_artist", "detective",
+        "hero_protector", "rebel_revolutionary", "antihero_villain", "trickster",
+        "explorer_outsider", "keeper_knowledge", "ruler_leader", "other"}
 NATURE = {"human", "artificial", "nonhuman", "abstract"}
 
 SYS = (
     "You label fictional and real characters on three axes. Reply ONLY with a JSON "
     "array, one object per input line, in order, each: "
     '{"name": <verbatim>, "alignment": one of [good,gray,evil,na], '
-    '"expertise": one of [science,arts_letters,polymath,leadership,other], '
+    '"role": one of [sage_mentor,thinker_scientist,creator_artist,detective,hero_protector,'
+    'rebel_revolutionary,antihero_villain,trickster,explorer_outsider,keeper_knowledge,ruler_leader,other], '
     '"nature": one of [human,artificial,nonhuman,abstract]}. '
     "alignment: good=heroic/virtuous, gray=morally ambiguous/antihero, evil=villainous, na=not a moral agent. "
-    "expertise: science=science/tech/medicine/invention; arts_letters=literature/art/music/philosophy/writing; "
-    "polymath=renowned general genius across many fields; leadership=politics/military/business/power; other=none. "
+    "role = the character's primary narrative archetype (pick the single best fit): "
+    "sage_mentor=wise guide/teacher (Gandalf, Yoda, Athena); "
+    "thinker_scientist=philosopher/scientist/intellectual (Socrates, Einstein, Curie); "
+    "creator_artist=writer/artist/inventor/maker (da Vinci, Woolf, Frida Kahlo); "
+    "detective=investigator/solver of mysteries (Holmes, Poirot, House); "
+    "hero_protector=courageous protector/champion (Samwise, Atticus Finch, Superman); "
+    "rebel_revolutionary=fights authority or overturns the order (V, Prometheus, Magneto); "
+    "antihero_villain=morally dark, criminal, or villainous (Hannibal Lecter, Walter White, Loki); "
+    "trickster=mischievous, cunning, rule-bending (Hermes, Ford Prefect, Lupin); "
+    "explorer_outsider=wanderer/adventurer or alienated outsider (Odysseus, Meursault, Gatsby); "
+    "keeper_knowledge=librarian/oracle/archive/keeper of information (the Oracle, a Librarian); "
+    "ruler_leader=king/politician/commander (Marcus Aurelius, Lincoln); other=none of these. "
     "nature: human=a person (real or fictional human); artificial=human-made being (AI, robot, android, golem); "
     "nonhuman=non-human natural being (god, myth creature, animal, alien); abstract=a concept/archetype, not an entity."
 )
@@ -50,11 +63,11 @@ SYS = (
 
 def _coerce(o: dict) -> dict:
     a = str(o.get("alignment", "")).lower().strip()
-    e = str(o.get("expertise", "")).lower().strip()
+    r = str(o.get("role", "")).lower().strip()
     n = str(o.get("nature", "")).lower().strip()
     return {
         "alignment": a if a in ALIGN else "na",
-        "expertise": e if e in EXPERT else "other",
+        "role": r if r in ROLE else "other",
         "nature": n if n in NATURE else "abstract",
     }
 
@@ -74,7 +87,7 @@ def main() -> int:
     ).fetchall()
 
     specs: dict = json.loads(OUT.read_text()) if OUT.is_file() else {}
-    todo = [(c, s) for c, s in rows if c not in specs]
+    todo = [(c, s) for c, s in rows if "role" not in specs.get(c, {})]
     print(f"{len(rows)} characters, {len(todo)} to classify", flush=True)
 
     headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
