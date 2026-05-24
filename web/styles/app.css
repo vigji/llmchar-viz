@@ -81,6 +81,9 @@ label.field { display: flex; flex-direction: column; gap: 4px; font-size: 10px; 
 .tablecard { overflow-x: auto; }
 .chart { width: 100%; height: 560px; }
 .chart.tall { height: 620px; }
+/* bar charts that scroll natively (real scrollbar + mouse wheel) */
+.chart-scroll { overflow-y: auto; overflow-x: hidden; }
+.chart-inner { width: 100%; }
 
 /* ---------- table ---------- */
 table { width: 100%; border-collapse: collapse; font-size: 13px; }

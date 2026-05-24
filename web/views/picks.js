@@ -59,10 +59,12 @@ export default {
     const heading = h("div", { style: { fontFamily: "var(--serif)", fontSize: "18px", fontWeight: "700", margin: "2px 0 8px" } });
     const legend = h("div", { class: "legend" });
     const note = h("div", { class: "note" });
-    const chartEl = h("div", { class: "chart tall card" });
-    view.append(heading, legend, note, chartEl);
+    const scroller = h("div", { class: "card chart-scroll" });
+    const chartInner = h("div", { class: "chart-inner" });
+    scroller.append(chartInner);
+    view.append(heading, legend, note, scroller);
     ctx.el.append(view);
-    const chart = makeChart(chartEl);
+    const chart = makeChart(chartInner);
 
     const nav = () => ctx.navigate("picks", {
       model: modelSel.value, alignment: alignSel.value, role: roleSel.value, nature: natureSel.value, color: colorSel.value,
@@ -109,20 +111,18 @@ export default {
 
       const cb = colorSel.value;
       const data = rows.slice().reverse();
-      // scale the axis to the current filtered set's max: rescales when filters change,
-      // but is constant across a scroll (computed from all rows, not the visible window)
+      // axis scales to the filtered set's max (rescales on filter, fixed while scrolling)
       const maxN = Math.max(...rows.map((r) => r.n));
-      const windowCount = Math.min(22, data.length);
-      const startPct = data.length > windowCount ? 100 * (1 - windowCount / data.length) : 0;
+      // size the chart to ALL bars; the card scrolls natively (real scrollbar + mouse wheel)
+      const innerH = Math.max(300, data.length * 24 + 64);
+      chartInner.style.height = innerH + "px";
+      scroller.style.height = Math.min(640, innerH) + "px";
+      chart.resize();
       chart.setOption({
-        grid: { left: 168, right: 40, top: 12, bottom: 26 },
+        grid: { left: 168, right: 40, top: 40, bottom: 14 },
         tooltip: { trigger: "item", formatter: (q) => `<b>${q.name}</b><br/>${(100 * q.value / denom).toFixed(1)}% · ${q.value}/${denom}<br/><span style="color:${COLORS.inkFaint}">${scope === "model" ? "click for rationales" : "click to see which models"}</span>` },
-        xAxis: { type: "value", max: maxN, name: "picks", nameLocation: "middle", nameGap: 30 },
-        yAxis: { type: "category", data: data.map((d) => d.name), axisLabel: { fontSize: 11, width: 156, overflow: "truncate" } },
-        dataZoom: data.length > windowCount ? [
-          { type: "slider", yAxisIndex: 0, start: startPct, end: 100, width: 14, right: 6, zoomLock: true, brushSelect: false },
-          { type: "inside", yAxisIndex: 0, start: startPct, end: 100, zoomLock: true, zoomOnMouseWheel: false, moveOnMouseWheel: true, moveOnMouseMove: true },
-        ] : [],
+        xAxis: { type: "value", max: maxN, name: "picks", nameLocation: "middle", nameGap: 24, position: "top", splitLine: { show: true } },
+        yAxis: { type: "category", data: data.map((d) => d.name), axisLabel: { fontSize: 11, width: 156, overflow: "truncate" }, axisTick: { show: false } },
         series: [{ type: "bar", barMaxWidth: 16, data: data.map((d) => ({ value: d.n, name: d.name,
           itemStyle: { color: traitColor(cb, d[cb]), borderRadius: [0, 3, 3, 0] } })) }],
       }, true);
