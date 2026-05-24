@@ -9,29 +9,47 @@ function select(pairs, cur, anyLabel) {
   for (const [v, l] of pairs) s.append(opt(v, l, v === cur));
   return s;
 }
+// model dropdown with a family hierarchy: "all models", then per-vendor groups
+// each offering "All <vendor>" plus the individual models.
+function modelSelect(models, cur) {
+  const s = h("select", {});
+  s.append(opt("", "all models", cur === ""));
+  const fams = {};
+  for (const m of models) (fams[m.family] ||= { vendor: m.vendor || m.family, items: [] }).items.push(m);
+  for (const fam of Object.keys(fams).sort((a, b) => fams[a].vendor.localeCompare(fams[b].vendor))) {
+    const g = fams[fam];
+    const og = document.createElement("optgroup");
+    og.label = g.vendor;
+    og.append(opt("fam:" + fam, "All " + g.vendor, cur === "fam:" + fam));
+    for (const m of g.items.sort((a, b) => a.label.localeCompare(b.label)))
+      og.append(opt(m.model_id, m.label, cur === m.model_id));
+    s.append(og);
+  }
+  return s;
+}
 
 export default {
   id: "picks",
   label: "Picks",
-  lede: "The most-named characters — across all models or one. Filter by trait, color by trait, and click a bar for the reasons (one model) or which models named it (all).",
+  lede: "The most-named characters — across all models, one family, or one model. Filter and color by trait; click a bar for the reasons (single model) or which models named it.",
   async mount(ctx) {
     const models = await ctx.query(`
-      SELECT m.model_id, m.label FROM models m
+      SELECT m.model_id, m.label, m.family, m.vendor FROM models m
       WHERE EXISTS (SELECT 1 FROM responses r WHERE r.model_id=m.model_id AND r.experiment='base_selfid_open')
-      ORDER BY m.label`);
-    const modelMap = Object.fromEntries(models.map((m) => [m.model_id, m.label]));
+      ORDER BY m.vendor, m.label`);
+    const modelMap = Object.fromEntries(models.map((m) => [m.model_id, m]));
+    const famVendor = {}; for (const m of models) famVendor[m.family] = m.vendor || m.family;
     const st = ctx.state;
     const colorBy = TRAITS[st.color] ? st.color : "alignment";
-    const model = st.model && modelMap[st.model] ? st.model : "";
-    const f = { alignment: st.alignment || "", role: st.role || "", nature: st.nature || "" };
+    const mv = st.model && (st.model.startsWith("fam:") || modelMap[st.model]) ? st.model : "";
 
     const view = h("div", { class: "view" });
     view.append(h("h2", {}, "Picks"), h("p", { class: "lede" }, this.lede));
 
-    const modelSel = select(models.map((m) => [m.model_id, m.label]), model, "all models");
-    const alignSel = select(TRAITS.alignment.values.map((v) => [v, TRAITS.alignment.disp[v]]), f.alignment, "any");
-    const roleSel = select(TRAITS.role.values.map((v) => [v, TRAITS.role.disp[v]]), f.role, "any");
-    const natureSel = select(TRAITS.nature.values.map((v) => [v, TRAITS.nature.disp[v]]), f.nature, "any");
+    const modelSel = modelSelect(models, mv);
+    const alignSel = select(TRAITS.alignment.values.map((v) => [v, TRAITS.alignment.disp[v]]), st.alignment || "", "any");
+    const roleSel = select(TRAITS.role.values.map((v) => [v, TRAITS.role.disp[v]]), st.role || "", "any");
+    const natureSel = select(TRAITS.nature.values.map((v) => [v, TRAITS.nature.disp[v]]), st.nature || "", "any");
     const colorSel = select(Object.entries(TRAITS).map(([k, t]) => [k, t.label]), colorBy);
     view.append(h("div", { class: "toolbar" }, [
       field("model", modelSel), field("alignment", alignSel), field("role", roleSel),
@@ -55,48 +73,48 @@ export default {
       const t = TRAITS[colorSel.value];
       legend.replaceChildren(...t.values.map((v) => h("span", {}, [h("i", { style: { background: t.colors[v] } }), t.disp[v]])));
 
-      const m = modelSel.value;
+      const v = modelSel.value;
       const where = ["r.experiment='base_selfid_open'"]; const p = {};
-      if (m) { where.push("r.model_id=$m"); p.$m = m; }
+      const dWhere = ["experiment='base_selfid_open'"]; const dp = {};
+      let scope = "all", scopeLabel = null;
+      if (v.startsWith("fam:")) {
+        const fam = v.slice(4);
+        where.push("m.family=$fam"); p.$fam = fam;
+        dWhere.push("model_id IN (SELECT model_id FROM models WHERE family=$fam)"); dp.$fam = fam;
+        scope = "family"; scopeLabel = famVendor[fam];
+      } else if (v) {
+        where.push("r.model_id=$m"); p.$m = v;
+        dWhere.push("model_id=$m"); dp.$m = v;
+        scope = "model"; scopeLabel = modelMap[v].label;
+      }
       if (alignSel.value) { where.push("c.alignment=$al"); p.$al = alignSel.value; }
       if (roleSel.value) { where.push("c.role=$ro"); p.$ro = roleSel.value; }
       if (natureSel.value) { where.push("c.nature=$na"); p.$na = natureSel.value; }
-      const lim = m ? "" : "LIMIT 80";
+      const lim = scope === "model" ? "" : "LIMIT 80";
+
       const rows = await ctx.query(`
         SELECT p.canonical AS name, c.alignment, c.role, c.nature, COUNT(DISTINCT p.response_id) AS n
-        FROM picks p JOIN responses r ON p.response_id=r.response_id JOIN characters c ON c.canonical=p.canonical
+        FROM picks p JOIN responses r ON p.response_id=r.response_id
+        JOIN characters c ON c.canonical=p.canonical JOIN models m ON m.model_id=r.model_id
         WHERE ${where.join(" AND ")} GROUP BY p.canonical ORDER BY n DESC ${lim}`, p);
+      const denom = (await ctx.queryOne(`SELECT COUNT(*) n FROM responses WHERE ${dWhere.join(" AND ")}`, dp)).n || 1;
 
-      const td = (ax, v) => v ? (v === "na" ? "unaligned" : TRAITS[ax].disp[v]) : "";
+      const td = (ax, val) => val ? (val === "na" ? "unaligned" : TRAITS[ax].disp[val]) : "";
       const traits = [td("alignment", alignSel.value), td("role", roleSel.value), td("nature", natureSel.value)].filter(Boolean).join(" ");
-      heading.textContent = (m
-        ? `${modelMap[m]}'s top ${traits} picks`
-        : `Top ${traits} picks across models`).replace(/ {2,}/g, " ");
-
+      heading.textContent = (scope === "all"
+        ? `Top ${traits} picks across models`
+        : `${scopeLabel}'s top ${traits} picks`).replace(/ {2,}/g, " ");
       if (!rows.length) { chart.clear(); note.textContent = "no matches"; return; }
+      note.textContent = `${rows.length} characters · ${denom} answers — scroll within the chart for the full list`;
 
       const cb = colorSel.value;
       const data = rows.slice().reverse();
       const windowCount = Math.min(22, data.length);
       const startPct = data.length > windowCount ? 100 * (1 - windowCount / data.length) : 0;
-
-      let xLabel, max, denom = 0;
-      if (m) {
-        denom = (await ctx.queryOne("SELECT COUNT(*) n FROM responses WHERE model_id=$m AND experiment='base_selfid_open'", { $m: m })).n || 1;
-        xLabel = "pick rate (%)"; max = denom;
-        note.textContent = `${rows.length} distinct characters across ${denom} answers — scroll within the chart for the full list`;
-      } else {
-        xLabel = "picks (all models)"; max = Math.max(...rows.map((r) => r.n));
-        note.textContent = `top ${rows.length} characters — scroll within the chart`;
-      }
-
       chart.setOption({
         grid: { left: 168, right: 40, top: 12, bottom: 26 },
-        tooltip: { trigger: "item", formatter: (q) => m
-          ? `<b>${q.name}</b><br/>${(100 * q.value / denom).toFixed(1)}% · ${q.value}/${denom}<br/><span style="color:${COLORS.inkFaint}">click for rationales</span>`
-          : `<b>${q.name}</b> · ${q.value} picks<br/><span style="color:${COLORS.inkFaint}">click to see which models</span>` },
-        xAxis: { type: "value", max, name: xLabel, nameLocation: "middle", nameGap: 30,
-          axisLabel: m ? { formatter: (v) => (100 * v / denom).toFixed(0) } : {} },
+        tooltip: { trigger: "item", formatter: (q) => `<b>${q.name}</b><br/>${(100 * q.value / denom).toFixed(1)}% · ${q.value}/${denom}<br/><span style="color:${COLORS.inkFaint}">${scope === "model" ? "click for rationales" : "click to see which models"}</span>` },
+        xAxis: { type: "value", max: denom, name: "pick rate (%)", nameLocation: "middle", nameGap: 30, axisLabel: { formatter: (x) => (100 * x / denom).toFixed(0) } },
         yAxis: { type: "category", data: data.map((d) => d.name), axisLabel: { fontSize: 11, width: 156, overflow: "truncate" } },
         dataZoom: data.length > windowCount ? [
           { type: "slider", yAxisIndex: 0, start: startPct, end: 100, width: 14, right: 6, zoomLock: true, brushSelect: false },
@@ -107,7 +125,7 @@ export default {
       }, true);
 
       chart.off("click");
-      chart.on("click", (q) => m ? openRationales(ctx, m, modelMap[m], q.name) : openWho(ctx, q.name));
+      chart.on("click", (q) => scope === "model" ? openRationales(ctx, v, scopeLabel, q.name) : openWho(ctx, q.name));
     }
     draw();
   },
