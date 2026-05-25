@@ -10,6 +10,8 @@ This repo packages those responses into a single portable **SQLite** file and a 
 serverless web explorer** (SQLite compiled to WebAssembly via sql.js — the `.db` loads and
 is queried entirely in your browser).
 
+**Live: https://vigji.github.io/llmchar-viz/**
+
 ## What's inside
 
 - **`llmchar.db`** — the single-file, directly-queryable database (the committed deliverable).
@@ -59,17 +61,18 @@ so subsequent `make db` runs are offline and reproducible.
 `make prodgen` runs a separate bare-vs-deployed-system-prompt probe (Mistral / Claude / Grok);
 its data is not loaded into the default DB but the code is kept for reuse.
 
-## Publish to GitHub Pages (later)
+## Deployment (GitHub Pages)
 
-The site is built to deploy as-is. Free GitHub Pages requires a **public** repo (this repo is
-private for now). To go live:
+Live at **https://vigji.github.io/llmchar-viz/**, served by **Pages → Deploy from a branch**
+(`main`, root). `.nojekyll` makes Pages copy files as-is, and every asset path is
+`import.meta.url`-relative, so the same code works locally and at the `/llmchar-viz/` base
+path. **Pushing to `main` re-publishes automatically** (~1 min) — including a freshly built
+`llmchar.db`.
 
-1. Make the repo public (Settings → General → Change visibility).
-2. Copy the template into place: `mkdir -p .github/workflows && cp deploy/pages.yml .github/workflows/`
-   (kept out of `.github/workflows/` here so it can be pushed without the `workflow` token scope),
-   then switch its trigger from `workflow_dispatch` to `push: { branches: [main] }`.
-3. (optional custom domain) set a repo variable `PAGES_DOMAIN` (e.g. `viz.vigji.io`) and point
-   its DNS at GitHub Pages — the workflow writes the `CNAME` for you.
+To reproduce the setup: make the repo public, then Settings → Pages → Source = "Deploy from a
+branch", Branch = `main` / `/ (root)`. (A GitHub Actions template also exists at `deploy/pages.yml`
+if you'd rather publish only `web/` + the DB; it needs the `workflow` token scope.)
+For a custom domain, add a `CNAME` file with the domain and point DNS at GitHub Pages.
 
 ## Provenance
 
